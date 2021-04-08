@@ -1,0 +1,108 @@
+[26-Nov-2020 13:51:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'common' not found in C:\xampp\htdocs\PSW\Stock Management\admin\app\include\sales_report.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\PSW\Stock Management\admin\app\include\sales_report.php on line 6
+[12-Jan-2021 14:47:34 Europe/Berlin] PHP Notice:  Undefined variable: data_arr in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 20
+[15-Jan-2021 09:01:24 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\common\database.mysqli.php on line 35
+[15-Jan-2021 09:06:55 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\common\database.mysqli.php on line 35
+[15-Jan-2021 09:07:38 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\common\database.mysqli.php on line 35
+[15-Jan-2021 09:08:33 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\common\database.mysqli.php on line 35
+[15-Jan-2021 09:09:33 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\common\database.mysqli.php on line 35
+[15-Jan-2021 12:18:28 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\common\database.mysqli.php on line 35
+[15-Jan-2021 13:23:13 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\common\database.mysqli.php on line 35
+[15-Jan-2021 13:30:50 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:30:50 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:30:54 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:30:54 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:31:47 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:31:47 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:33:13 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:33:13 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:34:13 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:34:13 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 137
+[15-Jan-2021 13:35:17 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\common\database.mysqli.php on line 35
+[15-Jan-2021 13:46:12 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:46:12 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:46:31 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:46:31 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:49:30 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:49:30 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:55:52 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:55:52 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:56:26 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:56:26 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:57:37 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 13:57:37 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 14:00:19 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 14:00:19 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 14:09:02 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 14:09:02 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 14:13:54 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 14:13:54 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 14:14:46 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[15-Jan-2021 14:14:46 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 85
+[18-Jan-2021 13:58:29 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 13:58:30 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 13:58:32 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 13:58:34 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 13:58:35 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 13:59:58 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:01:50 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:01:56 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:01:57 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:02:00 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:02:18 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:02:18 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:02:19 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:02:20 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:02:23 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:02:24 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[18-Jan-2021 14:02:24 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADINGCO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 07:57:49 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 07:57:53 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 07:57:53 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 07:57:53 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 11:33:01 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 11:33:03 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 11:33:03 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 11:33:18 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[19-Jan-2021 11:33:18 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[28-Jan-2021 14:00:54 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[28-Jan-2021 14:04:24 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\common\database.mysqli.php on line 35
+[28-Jan-2021 14:04:27 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\common\database.mysqli.php on line 35
+[29-Jan-2021 07:39:02 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 142
+[29-Jan-2021 07:39:02 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 142
+[29-Jan-2021 07:39:02 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 142
+[30-Jan-2021 09:39:29 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[30-Jan-2021 09:42:53 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[30-Jan-2021 09:43:26 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[30-Jan-2021 09:44:48 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 75
+[02-Feb-2021 11:50:10 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 142
+[02-Feb-2021 11:50:10 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 142
+[02-Feb-2021 11:50:13 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 142
+[02-Feb-2021 11:50:14 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 142
+[02-Feb-2021 13:37:08 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 145
+[02-Feb-2021 13:37:08 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 145
+[02-Feb-2021 13:37:08 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 145
+[02-Feb-2021 13:38:00 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 145
+[02-Feb-2021 13:38:00 Europe/Berlin] PHP Notice:  Undefined index: price in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 145
+[02-Feb-2021 14:23:48 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:27:58 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:28:50 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:29:12 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:29:38 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:29:39 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:30:54 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:32:36 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:34:44 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:34:47 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:34:48 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:34:48 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:34:50 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:34:51 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:34:52 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:38:15 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:38:15 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:38:15 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:38:31 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
+[02-Feb-2021 14:38:36 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\SHIVASHAKTITRADING_CO\admin\app\include\sales_report.php on line 47
