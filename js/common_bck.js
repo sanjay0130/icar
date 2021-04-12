@@ -49,8 +49,6 @@ function view_achievement_details()
   Details-The below function is for Banner Details .
  ***********************************************************************************************/
 function get_banner_details() {
-
-
     var data = { action: "get_banner_details" };
     // ajax call
     //to send a request to the php page
@@ -74,10 +72,8 @@ function get_banner_details() {
           var counter = i + 1;
           
           var image_path=jsonobj[i]["image"];
-          // var base_url = window.location.origin;
-          // var base_url = window.location.pathname.split("/").filter(function(c) { return c.length;}).pop();
-          // if()
-          var image_path ='img/banner/'+image_path;
+          var base_url = window.location.origin;
+          var image_path =base_url+'/rpid/img/banner/'+image_path;
           tag+='<div class="carousel-item ';
           if(i==0){
             tag+=' active';
@@ -154,10 +150,9 @@ function get_news_updates_details() {
         var jsonobj = JSON.parse(response);
         var tag = "";
         var image_path=jsonobj[0]["image"];
-          // var base_url = window.location.origin;
-          // var image_path =base_url+"/rpid/img/news/"+image_path;
-          var base_url ='img/news/'+image_path;
-          tag += '<figure class="smImg"><img src="'+base_url+'" alt=""></figure><a href="#" class="moreBtn">More</a>';
+          var base_url = window.location.origin;
+          var image_path =base_url+"/rpid/img/news/"+image_path;
+          tag += '<figure class="smImg"><img src="'+image_path+'" alt=""></figure><a href="#" class="moreBtn">More</a>';
           
        
         document.getElementById("news_updates_div").innerHTML = tag;

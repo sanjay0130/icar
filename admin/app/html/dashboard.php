@@ -1,15 +1,27 @@
  <div class="main-panel">
      <div class="content-wrapper">
          <div class="row">
-		 <div class="card">
+           
+            <div class="col-lg-12 grid-margin stretch-card align-items-center ">
+                 <div class="card align-items-center ">
+                     <div class="card-body pb-0 align-items-center ">
+                         <div class="d-flex align-items-center justify-content-between">
+                             <h1 style="color: #00a7c1;text-align: center;font-size: 60px;" id="all_stock" class=" font-weight-bold">WELCOME TO ICAR</h1>
+                         </div>
+                     </div>
+                     
+                 </div>
+             </div>
+		<!-- <div class="card">
                      <div class="card-body pb-0">
                          <div class="d-flex align-items-center justify-content-between">
+                            <h1> WELCOME TO ICAR</h1>
                             <img src="image/rpmiHeader.png">
                          </div>
                      </div>
                      <canvas id="newClient"></canvas>
                      
-                 </div> 
+                 </div> -->
              </div>
              <!--<div class="col-lg-3 grid-margin stretch-card">
                  <div class="card">

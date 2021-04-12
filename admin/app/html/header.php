@@ -6,7 +6,7 @@
                 
                 <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
                     <a class="navbar-brand brand-logo" href="#">
-                        <h2><b><u style="color:#0b10bf;"><span style="color: #ff0101;">RPID</span></u></b></h2>
+                        <h2><b><u style="color:#0b10bf;"><span style="color: #ff0101;">ICAR - Admin Panel</span></u></b></h2>
                     </a>
                     
                 </div>

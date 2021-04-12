@@ -263,11 +263,11 @@
   <img src="./images/wave.png" alt="" class="wave" />
   <div class="container">
     <div class="img">
-      <img src="./images/undraw_gifts_btw0.svg" alt="" />
+      <img src="./images/admin_logo.png" alt="" />
     </div>
     <div class="login_container">
       <form action="">
-        <img src="./images/undraw_gifts_btw0.svg" alt="" class="avtar" />
+        
         <h2>Welcome</h2>
         <div class="input_div in_width one">
           <div class="i">
