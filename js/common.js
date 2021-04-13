@@ -1,5 +1,13 @@
 // // ------------- show achievement in table -----------
-
+$(document).ready(function(){
+ 
+  $('#icarPhotos').lightGallery({
+          selector: '#icarPhotos .photoBox'
+  });     
+  $('#icarVideos').lightGallery({
+    selector: '#icarVideos .vidBox'
+});           
+});
 function view_achievement_details()
 {
   
@@ -123,14 +131,7 @@ function get_latest_news_details()
         
         }
          document.getElementById('xyz').innerHTML=tag;
-         $('#vertical-ticker').vTicker({
-                speed: 700,
-                pause: 4000,
-                showItems: 4,
-                mousePause: true,
-                animate: true,
-                startPaused: false
-            });
+         
         }
     });
 }
