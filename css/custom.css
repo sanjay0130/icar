@@ -225,7 +225,7 @@ figure {
 
 .siteTopNav .navbar .nav-link {
     color: #fff;
-    box-shadow: inset 0 2em 0.33em -0.5em #198c19;
+    box-shadow: inset 0 2em 1em -0.5em #198c19;
     background: #004000;
     text-transform: uppercase;
     font-size: 1em;
@@ -423,12 +423,16 @@ figure {
 }
 
 .aboutArea {
-    padding: 1em 0
+    margin-top: 2em;
 }
-
+.linkArea{
+    margin:1.5em 0;
+}
 .smBox {
-    margin-bottom: 1em;
     border-radius: 1em;
+    height: 100%;
+    border: 1px solid #ccc;
+    text-align: right;
 }
 
 .smBox .smHeader {
@@ -443,10 +447,8 @@ figure {
 }
 
 .smBox .smBody {
-    border: 1px solid #ccc;
     padding: 1em;
     text-align: right;
-    border-radius: 0 0 1em 1em;
 }
 
 .smBox.vTicker .smBody {
@@ -557,16 +559,14 @@ figure {
     width: 100%;
 }
 
-.miniBox {
-    margin-top: 2em;
-}
+.miniBox {height: 100%;border: 1px solid #ccc;border-radius: 1em;overflow: hidden;}
 .icarAbout .miniBox {
     margin-top: 0;
-    margin-bottom:1em
+    margin-bottom:1em;
+    height: auto;
 }
 .miniBox .mbHeader {
     background: #40a14c;
-    border-radius: 1em 1em 0 0;
     padding: 0.75em 1em;
     text-align: center;
 }
@@ -576,8 +576,6 @@ figure {
 }
 
 .miniBox .mbBody {
-    border: 1px solid #ccc;
-    border-radius: 0 0 .5em .5em;
     padding: 1em;
     min-height: 250px;
     height: auto !important;
@@ -602,8 +600,26 @@ figure {
 
 .miniBox .mbBody .suggestForm .form-group .form-control {}
 
+.miniBox .mbBody #vertical-ticker ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.miniBox .mbBody #vertical-ticker li {
+    text-align: left;
+    padding: .5em 1em !important;
+    border-bottom: 1px solid #eee;
+    position: relative
+}
+
+.miniBox .mbBody #vertical-ticker li a {
+    text-align: right;
+    display: block;
+}
+
+
 .miniBox .mbBody .qLinks {
-    padding-left: 2em;
 }
 
 .miniBox .mbBody .qLinks li {
@@ -736,6 +752,46 @@ figure {
 .innerBody .innerContent {
 }
 
+.innerBody .icarTeam {
+    padding: 3em 0;
+}
+.teamAll{
+    padding:4em 0;
+    background: #519d67;
+    text-align:center
+}
+.teamAll h2{
+ margin-bottom: 1em;
+ color: #fff;
+}
+.teamBoy{
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
+    background: #fff;
+    border-radius: 1em;
+}
+
+.teamBoy figure{
+    border-radius: 0 0 10em 10em;
+    overflow: hidden;
+    height: auto;
+    box-shadow: 0px 7px 10px rgb(0 0 0 / 10%);
+    border: 1px solid #fff;
+}
+.teamBoy figure img{width:100%;}
+.teamBoy .tyBody{padding: 1em;}
+.teamBoy .tyBody  h4{display: block;padding: 1em 0em;}
+.teamBoy .tyBody h4>small{display:block}
+
+.innerBody .icarTeam h2{
+    margin-bottom: .5em;;
+}
+.innerBody .icarTeam p span{
+    display: block;
+    font-size:1.25em;
+    padding: 0.5em 0;
+}
 .innerBody .icarAbout {
     padding: 3em 0;
 }
