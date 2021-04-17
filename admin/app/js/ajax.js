@@ -104,7 +104,6 @@ function success_msg(msg,page)
 //Function redirect the page with message.
 
 function loginWithMessage(page,val) {
-
   var xhttp;
 
   if (window.XMLHttpRequest) {
@@ -117,8 +116,8 @@ function loginWithMessage(page,val) {
   }
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      //alert(xhttp.responseText);
-      $("#page_content").load(xhttp.responseText);
+      $("#page-content-wrapper").load(xhttp.responseText);
+      $("#load_js").html("<script src='js/"+page+".js'></script>");
 
     }
   };

@@ -1,0 +1,155 @@
+.i1 {
+    margin: 14px;
+    color: #108C96;
+    font-size: 22px;
+}
+
+.i2 {
+    padding: 10px;
+    color: #E74C3C;
+    font-size: 22px;
+}
+
+.i3 {
+    margin: 14px;
+    color: #138D75;
+    font-size: 25px;
+}
+
+.b1 {
+    padding-left: 78px;
+    padding-right: 78px;
+}
+
+.span1 {
+    margin: 13px;
+}
+
+.span2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #28B463;
+    padding: 10px;
+}
+
+.span3 {
+    font-weight: bold;
+    float: right;
+}
+
+.tdata1 {
+    color: #2ECC71;
+    font-weight: 1000;
+}
+
+.tdata2 {
+    color: #E74C3C;
+    font-weight: 1000;
+}
+
+.h44 {
+    color: #E74C3C;
+}
+
+.th4 {
+    color: #566573;
+}
+
+.form-control {
+    border: 1px solid black;
+}
+
+.bord {
+    margin: 25px;
+    border-bottom: 2px solid #808B96;
+}
+
+input .form2 {
+    border: none;
+    background-color: inherit;
+}
+
+.radio1 {
+    background-color: #F7F9F9;
+    padding: 15px;
+    border: 2px solid #EAECEE;
+}
+
+.shadow2 {
+    background-color: #E5E7E9;
+    box-shadow: 3px 3px 3px 3px #808B96;
+    z-index: 300;
+}
+
+.shadow1 {
+    background-color: #E5E7E9;
+    box-shadow: 3px 3px 3px 3px #808B96;
+    z-index: 300;
+}
+
+.shadow1:hover {
+    background-image: linear-gradient(to right top, #c9d6eb, #ccd9ee, #cedbf1, #d1def5, #d4e1f8);
+    padding: 5px;
+    /* transition: 0.3s; */
+    box-shadow: 0px 10px 10px #555;
+    cursor: pointer;
+    z-index: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .d1 {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .d11 {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .d12 {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+.table1 {
+    background-color: #3498DB;
+}
+
+.stylish-table thead th {
+    color: #fff!important;
+}
+
+#payment_detail td {
+    color: #212F3D;
+    font-weight: bold;
+    width: 50%;
+}
+
+.p1 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.tabb {
+    color: #212F3D;
+}
+
+.tab1 {
+    color: #FF640A;
+    text-decoration: underline;
+}
+
+.pay {
+    display: none;
+}
+
+.card .shadow :hover .pay {
+    display: inline;
+}

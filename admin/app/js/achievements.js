@@ -74,15 +74,22 @@ function get_achievement_details()
             var edit_array_view={"id":jsonobj[i]['id'],"label1":jsonobj[i]['label1']};
             var edit_json_view=JSON.stringify(edit_array_view);
         //     // edit button
-            tag+="<td><a href= '#example'><span  class='button' title='Edit'onclick='edit_achievement("+edit_json_view+");'><i style='color: #36a907;' class='mdi mdi-lead-pencil mx-0'></i></span></a></td>";
+            tag+="<td><span  data-toggle='modal' data-target='#exampleModal' class='button' title='Edit' onclick='edit_achievement("+edit_json_view+");'><i style='color: #36a907;' class='mdi mdi-lead-pencil mx-0'></i></span></td>";
         //     // delete button
             tag+="<td> <span onclick='delete_achievement("+edit_json_view+");'><i style='color: red;' class='mdi mdi-delete-forever mx-0'></i></span></td>";
               tag+="</tr>";
         }
          document.getElementById('show_data').innerHTML=tag;
          if (!$.fn.DataTable.isDataTable('#myTable')) {
-          $(document).ready(function() {$('#myTable').DataTable()});
-          }
+        $(document).ready(function () {
+            $("#myTable").DataTable({
+              dom: "Bfrtip",
+              buttons: {
+                buttons: [{ extend: "excel", className: "excelButton" }],
+              },
+            });
+        });
+      }
          
          
         }
@@ -122,10 +129,11 @@ function upd_achievement()
           $('.loader').hide(); 
                  
           loginContent('achievements');
-          var get_availability = $('div').hasClass('div_err_msg');       
-          if(get_availability==true)
-          {
-            $( ".div_err_msg" ).remove();
+          $(".modal-backdrop").remove();
+          $("body").removeClass("modal-open");
+          var get_availability = $("div").hasClass("div_err_msg");
+          if (get_availability == true) {
+            $(".div_err_msg").remove();
           }
           if(response.trim()=="success")
           {
@@ -168,7 +176,6 @@ if(x == true){
           else{
             errorBoxAlert2('Error in Deletion..');
           }
-           loginContent('achievements');
         }
     });
   }else{

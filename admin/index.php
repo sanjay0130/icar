@@ -6,7 +6,7 @@
   <title>RPID</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
-  <!-- <link rel="shortcut icon" href="./images/s.png" /> -->
+  <!--<link rel="shortcut icon" href="./images/s.png" />-->
   <style>
     * {
       margin: 0;
@@ -263,11 +263,11 @@
   <img src="./images/wave.png" alt="" class="wave" />
   <div class="container">
     <div class="img">
-      <img src="./images/admin_logo.png" alt="" />
+      <img src="./images/nrri.png" alt="" />
     </div>
     <div class="login_container">
       <form action="">
-        
+        <img src="./images/undraw_finance_0bdk.svg" alt="" class="avtar" />
         <h2>Welcome</h2>
         <div class="input_div in_width one">
           <div class="i">
