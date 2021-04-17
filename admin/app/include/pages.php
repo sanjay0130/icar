@@ -6,7 +6,6 @@ $page = $_REQUEST['page'];
 // @$data = $_REQUEST['data'];
 
 // echo "include/adm_dashboard.php";
-
 if ($mid != ""){
 	echo "html/".$page.".php?msgid=".$mid;	
 }

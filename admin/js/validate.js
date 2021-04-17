@@ -61,7 +61,7 @@ function user_validate(){
        
       },
       success: function(data){
-       
+       // console.log(data);
          if (data.trim() == "fail")
         {
         document.getElementById('error_msg').innerHTML='Enter Valid Username & Password.';

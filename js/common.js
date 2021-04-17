@@ -166,3 +166,159 @@ function get_news_updates_details() {
       },
     });
   }
+
+
+/***********************************************************************************************
+  Name: Mrutunjay Pani
+  Date-8/04/21
+  Details-The below function is for Banner Details .
+ ***********************************************************************************************/
+function get_video_info()
+{
+  
+  var data={action:'get_video_info'};
+    // ajax call
+    //to send a request to the php page 
+    //and after processing it will get the response
+    $.ajax({
+      url: "include/video_gallery.php",
+      type : "POST",
+      data: data,
+      beforeSend: function(){
+        $('.loader').show();
+        },
+      
+      success:function(response)
+        {
+          $('.loader').hide();
+         //  return false;
+          var jsonobj=JSON.parse(response);
+          // console.log(jsonobj);
+          //  return false;
+          var tag ="";
+        // //loop to create and display the table rows
+        for(var i=0;i<jsonobj.length;i++){
+          var counter  = i+1;
+          console.log("");
+          tag += `<div class="col-sm-4">
+                            <div class="vidBox">
+                                <iframe width="100%" height="236" src="`+jsonobj[i]['v_link']+`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>`;
+            
+        }
+         document.getElementById('icarVideos').innerHTML=tag;
+        
+        }
+    });
+}
+
+/***********************************************************************************************
+  Name: Mrutunjay Pani
+  Date-8/04/21
+  Details-The below function is for team Details .
+ ***********************************************************************************************/
+function get_team_info()
+{
+  
+  var data={action:'get_team_info'};
+    // ajax call
+    //to send a request to the php page 
+    //and after processing it will get the response
+    $.ajax({
+      url: "include/team_member.php",
+      type : "POST",
+      data: data,
+      beforeSend: function(){
+        $('.loader').show();
+        },
+      
+      success:function(response)
+        {
+          $('.loader').hide();
+         //  return false;
+          var jsonobj=JSON.parse(response);
+          // console.log(jsonobj);
+          //  return false;
+          var tag ="";
+        // //loop to create and display the table rows
+        for(var i=0;i<jsonobj.length;i++){
+          var counter  = i+1;
+          var status=jsonobj[i]['status'];
+          var id=jsonobj[i]["id"];
+          tag += `<div class="col-sm-4">
+          <div class="teamBoy">
+            <figure><img src="uploads/`+jsonobj[i]['member_photo']+`" alt=""></figure>
+            <div class="tyBody">
+              <h4>`+jsonobj[i]['team_member_name']+`<small>`+jsonobj[i]['member_designation']+`</small></h4>
+            </div>
+          </div>
+        </div>`;
+                       
+        }
+         document.getElementById('team_member_id').innerHTML=tag;
+        
+        }
+    });
+}
+
+
+function create_contact() {
+     var formData = new FormData(contact_us_form);
+      formData.append("action", "create_contact");
+      $.ajax({
+        url: "include/contact_us.php",
+        type: "POST",
+        data: formData,
+        contentType: false,
+        processData: false,
+        beforeSend: function () {
+        },
+
+        success: function (response) {
+          if (response.trim() == "success") {
+            alert("your request send successfully..");
+            location.reload();
+          } else {
+            alert("Please check your Details..");
+          }
+        },
+      });    
+}
+
+
+function get_about_info()
+{
+  
+  var data={action:'get_about_info'};
+    // ajax call
+    //to send a request to the php page 
+    //and after processing it will get the response
+    $.ajax({
+      url: "include/about_us.php",
+      type : "POST",
+      data: data,
+      beforeSend: function(){
+        $('.loader').show();
+        },
+      
+      success:function(response)
+        {
+          $('.loader').hide();
+         //  return false;
+          var jsonobj=JSON.parse(response);
+          // console.log(jsonobj);
+          //  return false;
+          var tag ="";
+        // //loop to create and display the table rows
+        for(var i=0;i<jsonobj.length;i++){
+          var counter  = i+1;
+          
+          tag += "<span>"+jsonobj[i]['aboutus']+"</span>";
+           
+        }
+         document.getElementById('about_content').innerHTML=tag;
+        
+        }
+    });
+}

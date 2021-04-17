@@ -70,8 +70,8 @@ function get_latest_news_details()
         //     // //code for view all user details
             var edit_array_view={"id":jsonobj[i]['id'],"news":jsonobj[i]['news']};
             var edit_json_view=JSON.stringify(edit_array_view);
-        //     // edit button
-            tag+="<td><a href= '#example'><span  class='button' title='Edit'onclick='edit_lattest_news("+edit_json_view+");'><i style='color: #36a907;' class='mdi mdi-lead-pencil mx-0'></i></span></a></td>";
+        
+            tag+="<td><span  data-toggle='modal' data-target='#exampleModal' class='button' title='Edit' onclick='edit_lattest_news("+edit_json_view+");'><i style='color: #36a907;' class='mdi mdi-lead-pencil mx-0'></i></span></td>";
         //     // delete button
             tag+="<td> <span onclick='delete_latest_news("+edit_json_view+");'><i style='color: red;' class='mdi mdi-delete-forever mx-0'></i></span></td>";
               tag+="</tr>";
@@ -118,10 +118,11 @@ function upd_latest_news()
           $('.loader').hide(); 
                  
           loginContent('latest_news');
-          var get_availability = $('div').hasClass('div_err_msg');       
-          if(get_availability==true)
-          {
-            $( ".div_err_msg" ).remove();
+          $(".modal-backdrop").remove();
+          $("body").removeClass("modal-open");
+          var get_availability = $("div").hasClass("div_err_msg");
+          if (get_availability == true) {
+            $(".div_err_msg").remove();
           }
           if(response.trim()=="success")
           {

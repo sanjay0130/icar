@@ -59,7 +59,7 @@ function create_news_updates() {
           tag += "<td>" + jsonobj[i]["news_updates"] + "</td>";
           var image_path=jsonobj[i]["image"];
           var base_url = window.location.origin;
-          var image_path =base_url+"/rpid/img/news/"+image_path;
+          var image_path ="../../img/news/"+image_path;
          tag += '<td> <img src="'+image_path+'" width="50" height="30" /> </td>';
       var edit_array_view = {
           id: jsonobj[i]["id"],
