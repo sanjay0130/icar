@@ -40,13 +40,20 @@ figure {
 .mainBody .sliderArea .carousel-item {
     height: 450px;
 }
-
+.mainBody .sliderArea .carousel-caption {
+    position:absolute;
+    background:rgba(0,0,0,0.4);
+    left:0;
+    right:0;
+    bottom:0;
+    padding-bottom: 2em;
+}
 .mainBody .sliderArea .carousel-control-prev,
 .mainBody .sliderArea .carousel-control-next {
     width: auto;
     opacity: 1;
 }
-
+.mainBody .sliderArea .carousel-indicators{margin-bottom: 0;}
 .mainBody .sliderArea .carousel-control-prev {}
 
 .mainBody .sliderArea .carousel-control-next {}
@@ -756,33 +763,36 @@ figure {
     padding: 3em 0;
 }
 .teamAll{
-    padding:4em 0;
-    background: #519d67;
-    text-align:center
+    text-align:center;
+    padding: 1em;
 }
+.teamAll .container-fluid{background: #519d67;padding: 2em;}
 .teamAll h2{
  margin-bottom: 1em;
- color: #fff;
+ color: #434a45;
+ border: 1px dotted;
+ padding: 0.5em;
+ background: white;
+ font-weight: 700;
 }
 .teamBoy{
     /* border: 1px solid #ccc; */
     text-align: center;
     box-shadow: 0 0 7px rgb(0 0 0 / 20%);
     background: #fff;
-    border-radius: 1em;
     padding: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .teamBoy figure{
     overflow: hidden;
-    height: auto;
+    height: 275px;
     border: 1px solid #fff;
 }
-.teamBoy figure img{width:100%;}
+.teamBoy figure img{width:100%;height: 100%;object-fit: cover;}
 .teamBoy .tyBody{padding: 1em 0;}
-.teamBoy .tyBody  h4{display: block;font-weight: 600;}
-.teamBoy .tyBody h4>small{display:block;font-size: 0.75em;color: #540890;margin-top: 0.5em;}
+.teamBoy .tyBody  h4{display: block;font-weight: 600;font-family: monospace;font-size: 1.5em;}
+.teamBoy .tyBody h4>small{display:block;font-size: 0.75em;color: #540890;margin: 0.5em 0;}
 
 .innerBody .icarTeam h2{
     margin-bottom: .5em;;
@@ -1027,4 +1037,21 @@ figure {
     .headLines .rollNews::before{
         display:none
     }
+    .teamBoy figure {
+        height: auto;
+            }
+            .teamAll h2{
+                font-size:1.75em;
+                font-weight:500;
+            }
+            .teamAll .container-fluid {
+    background: #519d67;
+    padding: 1em;
+}
+.mainBody .sliderArea .carousel-caption{
+    padding:1em
+}
+.mainBody .sliderArea .carousel-caption h3{
+    font-size:2em
+}
 }
