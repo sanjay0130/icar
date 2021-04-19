@@ -134,7 +134,7 @@
                   //echo '<pre>'; print_r($gallery); die;
                   foreach ( $gallery as $key => $value) {
                   	$imagePath = 'img/photo_gallery/'.$value['image'];
-					echo '<div class="col-sm-3"> <a href="'.$imagePath.'" class="photoBox"> <img src="'.$imagePath.'" alt=""> </a> </div>';
+					echo '<div class="col-sm-'.rand(2,4).'"> <a href="'.$imagePath.'" class="photoBox"> <img src="'.$imagePath.'" alt=""> </a> </div>';
                   }
               } else {
 
