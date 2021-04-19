@@ -55,6 +55,8 @@ function create_banner() {
           var counter = i + 1;
           tag += "<tr>";
           tag += "<td>" + counter + "</td>";
+          tag += "<td>" + jsonobj[i]['title'] + "</td>";
+
           var image_path=jsonobj[i]["image"];
           var base_url = window.location.origin;
           // var image_path =base_url+"/rpid/img/banner/"+image_path;
