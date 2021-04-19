@@ -13,7 +13,7 @@
                                         <div class="row">
                                             <div class="col-lg-12 col-xlg-9 col-md-12">
                                                 <div class="card">
-                                                    <h5 style="color:#D35400;">Achievments Info</h5>
+                                                    <h5 style="color:#D35400;">Latest News Info</h5>
                                                     <div class="card-body">
                                                         <form id="latest_news_form" name="latest_news_form" enctype="multipart/form-data" class="form-inline">
                                                           <label class="form_label" for="label_1">Latest News</label>

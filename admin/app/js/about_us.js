@@ -27,8 +27,8 @@ function get_about_info()
           
           tag += "<tr>";
             tag += "<td>" + counter + "</td>";
-            tag+="<td style='text-transform: capitalize;'>"+jsonobj[i]['title']+"</td>"; 
-            tag+="<td style='text-transform: capitalize;'>"+jsonobj[i]['aboutus']+"</td>";
+            tag+="<td style='text-transform: capitalize;word-wrap: break-word;white-space: normal;'>"+jsonobj[i]['title']+"</td>"; 
+            tag+="<td style='text-transform: capitalize;word-wrap: break-word;white-space: normal;'>"+jsonobj[i]['aboutus']+"</td>";
                       
             // //code for view all user details
             var edit_array_view={

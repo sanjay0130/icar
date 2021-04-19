@@ -265,6 +265,12 @@ function get_team_info()
 
 
 function create_contact() {
+   var ids=['name','mobile','message'];
+  var validation_type=[["blank"],["blank"],["blank"]];
+  var messeges=[["<span style='color:red;'>Name cannot be blank</span>"],["<span style='color:red;'>Mobile cannot be blank</span>"],["<span style='color:red;'>Message cannot be blank</span>"]];
+  var msg=validate(ids,validation_type,'err_msg',messeges);
+  if(msg == undefined)
+  { 
      var formData = new FormData(contact_us_form);
       formData.append("action", "create_contact");
       $.ajax({
@@ -284,7 +290,10 @@ function create_contact() {
             alert("Please check your Details..");
           }
         },
-      });    
+      }); 
+      }else{
+        return false;
+      }   
 }
 
 

@@ -2,7 +2,12 @@
 
 function create_achievement()
 {
-  
+   var ids=['label_1'];
+  var validation_type=[["blank"]];
+  var messeges=[["<span style='color:red;'>Field cannot be blank</span>"]];
+  var msg=validate(ids,validation_type,'err_msg',messeges);
+  if(msg == undefined)
+  { 
   var formData = new FormData(achievement_name_form);
     formData.append('action','create_achievement');
     $.ajax({
@@ -34,6 +39,9 @@ function create_achievement()
           loginContent('achievements');
         }
     });
+  }else{
+    return false;
+  }
 }
 // // ------------- show data in table -----------
 

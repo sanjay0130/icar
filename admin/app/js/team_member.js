@@ -1,4 +1,10 @@
 function create_team() {
+   var ids=['name','designation','image'];
+  var validation_type=[["blank"],["blank"],["blank"]];
+  var messeges=[["<span style='color:red;'>Name cannot be blank</span>"],["<span style='color:red;'>Designation cannot be blank</span>"],["<span style='color:red;'>Photo cannot be blank</span>"]];
+  var msg=validate(ids,validation_type,'err_msg',messeges);
+  if(msg == undefined)
+  { 
      var formData = new FormData(team_form);
       formData.append("action", "create_team");
       $.ajax({
@@ -26,7 +32,11 @@ function create_team() {
           }
           loginContent("team_member");
         },
-      });    
+      });  
+    }
+    else{
+      return false;
+    }  
 }
 
 

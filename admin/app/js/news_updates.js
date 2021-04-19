@@ -1,5 +1,10 @@
 function create_news_updates() {
-
+   var ids=['image'];
+  var validation_type=[["blank"]];
+  var messeges=[["<span style='color:red;'>Photo cannot be blank</span>"]];
+  var msg=validate(ids,validation_type,'err_msg',messeges);
+  if(msg == undefined)
+  { 
   var formData = new FormData(banner_name_form);
   
   var image = $('#image')[0].files;
@@ -29,6 +34,9 @@ function create_news_updates() {
         loginContent("news_updates");
       },
     });
+   }else{
+    return false;
+   }
     
   }
 
