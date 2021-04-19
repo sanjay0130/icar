@@ -19,69 +19,48 @@
 <!--Doctype Ends Here-->
 <body>
 <?php include("header.php"); ?>
-<main class="innerBody">
-  <section class="innerBanner">
-    <figure> <img src="img/banner/innerAboutBanner.jpg" alt=""> </figure>
-    <div class="bannerInfo">
-      <h3>Our Team</h3>
-      <p>ICAR - National Rice Reaserch Institute</p>
-    </div>
-  </section>
-  <section class="headLines">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 px-0">
-          <h3 class="newsHd">Recent Events</h3>
-          <div class="rollNews my-auto">
-            <marquee behavior="scroll" direction="left" onMouseOver="this.stop();" onMouseOut="this.start();">
-            <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-            <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-            <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-            <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-            <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-            </marquee>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="innerContent icarTeam">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-9">
-          <h2>Developed by</h2>
-          <p><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span><span>Dr. VDS Das Rao</span></p>
-        </div>
-        <div class="col-sm-3">
-          <div class="miniBox">
-            <div class="mbHeader">
-              <h4>Quick Links</h4>
+
+
+ <main class="innerBody">
+        <section class="innerBanner">
+            <figure>
+                <img src="img/banner/innerAboutBanner.jpg" alt="">
+            </figure>
+            <div class="bannerInfo">
+                <h3>Our Team</h3>
+                <p>ICAR - National Rice Reaserch Institute</p>
             </div>
-            <div class="mbBody" id="vertical-ticker2">
-              <ul class="qLinks">
-                <li><a href="#">Rice Pest Lab</a></li>
-                <li><a href="#">ICAR-National Rice Research Institute</a></li>
-                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
-              </ul>
+        </section>
+        <section class="headLines">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12 px-0">
+                     <h3 class="newsHd">Recent Events</h3>
+                     <div class="rollNews my-auto">
+                         <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
+                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
+                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
+                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>                              
+                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
+                        </marquee>
+                    </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="teamAll">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>Our Team Mates</h2>
-        </div>
-      </div>
-      <div class="row" id="team_member_id">
-       
-      </div>
-    </div>
-  </section>
-</main>
+         </section>
+        
+        <section class="teamAll">
+            <div class="container-fluid">
+                <div class="row" id="team_member_id">
+                    
+
+                </div>
+            </div>
+        </section>
+  
+    </main>
+
 <?php include("footer.php"); ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

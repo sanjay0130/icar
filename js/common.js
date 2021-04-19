@@ -231,34 +231,35 @@ function get_team_info()
       data: data,
       beforeSend: function(){
         $('.loader').show();
-        },
+      },
       
       success:function(response)
-        {
-          $('.loader').hide();
-         //  return false;
-          var jsonobj=JSON.parse(response);
-          // console.log(jsonobj);
-          //  return false;
-          var tag ="";
-        // //loop to create and display the table rows
-        for(var i=0;i<jsonobj.length;i++){
-          var counter  = i+1;
-          var status=jsonobj[i]['status'];
-          var id=jsonobj[i]["id"];
-          tag += `<div class="col-sm-4">
-          <div class="teamBoy">
-            <figure><img src="uploads/`+jsonobj[i]['member_photo']+`" alt=""></figure>
-            <div class="tyBody">
-              <h4>`+jsonobj[i]['team_member_name']+`<small>`+jsonobj[i]['member_designation']+`</small></h4>
-            </div>
-          </div>
-        </div>`;
-                       
+      {
+        $('.loader').hide();
+        var jsonobj=JSON.parse(response);
+        var tag ="";
+        if(jsonobj.length > 0) {
+
+            for(var i=0;i<jsonobj.length;i++){
+              var counter  = i+1;
+              var status=jsonobj[i]['status'];
+              var id=jsonobj[i]["id"];
+              tag += `<div class="col-sm-3">
+                        <div class="teamBoy">
+                          <figure><img src="uploads/`+jsonobj[i]['member_photo']+`" alt=""></figure>
+                          <div class="tyBody">
+                            <h4>`+jsonobj[i]['team_member_name']+`<small>`+jsonobj[i]['member_designation']+`</small></h4>
+                          </div>
+                        </div>
+                      </div>`;            
+            }
+            document.getElementById('team_member_id').innerHTML=tag; 
+        } else {
+
+            $('.teamAll').html('<h1>No Records Found</h1>').css("padding", "3em");; 
         }
-         document.getElementById('team_member_id').innerHTML=tag;
-        
-        }
+       
+      }
     });
 }
 
