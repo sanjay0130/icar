@@ -23,43 +23,59 @@
   <section class="sliderArea">
     <div class="container-fluid">
       <div class="row">
-        <?php include("sidebar.php"); ?>
+          <?php include("sidebar.php"); ?>
+
+          <?php
+            include('admin/common/database.mysqli.php');
+            $con_obj = new common();
+
+            $fetch_res = $con_obj->select('banner', '*', NULL, "1", NULL);
+            $res = $con_obj->numRows();
+            if ($res > 0) {
+                $res = $con_obj->getResult();
+            } else {
+                $res = 0;
+            }
+
+          ?>
+
         <div class="col-sm-8">
           <div id="siteSlider" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#siteSlider" data-slide-to="0" class="active"></li>
-              <li data-target="#siteSlider" data-slide-to="1"></li>
-              <li data-target="#siteSlider" data-slide-to="2"></li>
-              <li data-target="#siteSlider" data-slide-to="3"></li>
-              <li data-target="#siteSlider" data-slide-to="4"></li>
+              <?php 
+
+              $ctr = 0;
+              foreach ($res as $key => $value) {
+                $active = ($ctr == 0) ? 'active' : '';
+                echo '<li data-target="#siteSlider" data-slide-to="'.$ctr.'" class="'.$active.'"></li>'; 
+                $ctr = $ctr + 1;
+              }
+
+              ?>
+            
             </ol>
+           
             <div class="carousel-inner" id="view_slider_banner">
-              <div class="carousel-item active"> <img src="img/slider1.jpg"> 
-              <div class="carousel-caption">
-    <h3>Los Angeles</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  </div>
-</div>
-              <div class="carousel-item"> <img src="img/slider2.jpg"> 
-              <div class="carousel-caption">
-    <h3>Los Angeles</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  </div> </div>
-              <div class="carousel-item"> <img src="img/slider3.jpg" alt="..."> 
-              <div class="carousel-caption">
-    <h3>Los Angeles</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  </div> </div>
-              <div class="carousel-item"> <img src="img/slider4.jpg" alt="...">  
-              <div class="carousel-caption">
-    <h3>Los Angeles</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  </div></div>
-              <div class="carousel-item"> <img src="img/slider5.jpg" alt="..."> 
-              <div class="carousel-caption">
-    <h3>Los Angeles</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  </div> </div>
+              
+              <?php 
+
+              $ctrSlide = 0;
+              foreach ($res as $key => $value) {
+                $active = ($ctrSlide == 0) ? 'active' : '';
+              ?>
+                <div class="carousel-item <?php echo $active; ?>"> 
+                  <img src="img/banner/<?php echo $value['image']; ?>"> 
+                      <div class="carousel-caption">
+                        <h3><?php echo $value['title'] ?></h3>
+                      </div>
+                </div>
+
+              <?php 
+                $ctrSlide = $ctrSlide + 1;
+              }
+
+              ?>
+           
             </div>
             <a class="carousel-control-prev" href="#siteSlider" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-chevron-left"></i></span> </a> <a class="carousel-control-next" href="#siteSlider" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-chevron-right"></i></span> </a> </div>
         </div>
@@ -70,8 +86,7 @@
             </div>
 
             <?php
-              include('admin/common/database.mysqli.php');
-              $con_obj   = new common();
+              
               $fetch_res = $con_obj->select('achievements', '*', NULL, NULL, NULL);
               $res       = $con_obj->numRows();
               if ($res > 0) {
