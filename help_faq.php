@@ -21,9 +21,10 @@
  <?php include("header.php"); ?>
 <main class="innerBody">
   <section class="innerBanner">
-    <figure> <img src="img/banner/innerAboutBanner.jpg" alt=""> </figure>
+    <figure> <img src="img/banner/innerFaqBanner.jpg" alt=""> </figure>
     <div class="bannerInfo">
       <h3>Help & Faq</h3>
+      <p>ICAR - National Rice Reaserch Institute</p>
     </div>
   </section>
   <section class="headLines">
@@ -44,21 +45,59 @@
       </div>
     </div>
   </section>
-  <section class="innerContent icarAbout">
+  <section class="innerContent icarFaq">
     <div class="container">
       <div class="row">
         <div class="col-sm-9">
           <div class="row">
-            <div class="col-sm-4">
-              <figure class="aboutImg"> <img src="img/nrri.jpg" alt=""> </figure>
-            </div>
-            <div class="col-sm-8">
-              <div class="aboutInfo">
-                <h3>Help & Faq</h3>
-                <ol id="show_faq_data">
-                 
-                </ol>
-              </div>
+           
+            <div class="col-sm-12">
+              <h3>Freaquently Asked Questions</h3>
+              <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5>
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5>
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5>
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </div>
@@ -75,18 +114,7 @@
               </ul>
             </div>
           </div>
-          <div class="miniBox">
-            <div class="mbHeader">
-              <h4>Quick Links</h4>
-            </div>
-            <div class="mbBody" id="vertical-ticker2">
-              <ul class="qLinks">
-                <li><a href="#">Rice Pest Lab</a></li>
-                <li><a href="#">ICAR-National Rice Research Institute</a></li>
-                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
-              </ul>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -124,22 +152,7 @@
 <script>
         $(document).ready(function(){
             
-            $('#vertical-ticker1').vTicker({
-              speed: 700,
-              pause: 4000,
-              showItems: 4,
-              mousePause: true,
-              animate: true,
-              startPaused: false
-          });
-          $('#vertical-ticker2').vTicker({
-            speed: 700,
-            pause: 4000,
-            showItems: 4,
-            mousePause: true,
-            animate: true,
-            startPaused: false
-        });
+           
           
         });
     </script>

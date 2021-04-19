@@ -34,11 +34,32 @@
               <li data-target="#siteSlider" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner" id="view_slider_banner">
-              <div class="carousel-item active"> <img src="img/slider1.jpg"> </div>
-              <div class="carousel-item"> <img src="img/slider2.jpg"> </div>
-              <div class="carousel-item"> <img src="img/slider3.jpg" alt="..."> </div>
-              <div class="carousel-item"> <img src="img/slider4.jpg" alt="..."> </div>
-              <div class="carousel-item"> <img src="img/slider5.jpg" alt="..."> </div>
+              <div class="carousel-item active"> <img src="img/slider1.jpg"> 
+              <div class="carousel-caption">
+    <h3>Los Angeles</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div>
+</div>
+              <div class="carousel-item"> <img src="img/slider2.jpg"> 
+              <div class="carousel-caption">
+    <h3>Los Angeles</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div> </div>
+              <div class="carousel-item"> <img src="img/slider3.jpg" alt="..."> 
+              <div class="carousel-caption">
+    <h3>Los Angeles</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div> </div>
+              <div class="carousel-item"> <img src="img/slider4.jpg" alt="...">  
+              <div class="carousel-caption">
+    <h3>Los Angeles</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div></div>
+              <div class="carousel-item"> <img src="img/slider5.jpg" alt="..."> 
+              <div class="carousel-caption">
+    <h3>Los Angeles</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div> </div>
             </div>
             <a class="carousel-control-prev" href="#siteSlider" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-chevron-left"></i></span> </a> <a class="carousel-control-next" href="#siteSlider" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-chevron-right"></i></span> </a> </div>
         </div>
