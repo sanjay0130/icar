@@ -322,3 +322,71 @@ function get_about_info()
         }
     });
 }
+
+
+
+
+function get_faq_details()
+{
+  var data={action:'get_faq_details'};
+    // ajax call
+    //to send a request to the php page 
+    //and after processing it will get the response
+    $.ajax({
+      url: "include/faq.php",
+      type : "POST",
+      data: data,
+      beforeSend: function(){
+        $('.loader').show();
+        },
+      
+      success:function(response)
+        {
+          $('.loader').hide();
+          
+          var jsonobj=JSON.parse(response);
+          var tag ="";
+    //     // // //loop to create and display the table rows
+        for(var i=0;i<jsonobj.length;i++){
+          var counter  = i+1;
+          tag+="<li>"+jsonobj[i]['description']+".</li>";
+
+        }
+         document.getElementById('show_faq_data').innerHTML=tag;
+         
+        }
+    });
+}
+
+
+
+
+  function get_photo_gallery_details() {
+    var data = { action: "get_photo_gallery_details" };
+    // ajax call
+    //to send a request to the php page
+    //and after processing it will get the response
+    $.ajax({
+      url: "include/photo_gallery.php",
+      type: "POST",
+      data: data,
+      beforeSend: function () {
+        $(".loader").show();
+      },
+  
+      success: function (response) {
+        // console.log(response);
+        $(".loader").hide();
+       
+        var jsonobj = JSON.parse(response);
+        var tag = "";
+        // //loop to create and display the table rows
+        for (var i = 0; i < jsonobj.length; i++) {
+          var counter = i + 1;
+          tag += `<div class="col-sm-3"> <a href="img/photo_gallery/`+jsonobj[i]["image"]+`" class="photoBox"> <img src="img/photo_gallery/`+jsonobj[i]["image"]+`" alt=""> </a> </div>`;  
+       }
+        document.getElementById("icarPhotos").innerHTML = tag;
+        
+      },
+    });
+  }

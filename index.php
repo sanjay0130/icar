@@ -18,200 +18,12 @@
 </head>
 <!--Doctype Ends Here-->
 <body>
-<header class="siteHeader">
-  <section class="topBar">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 px-sm-0 my-auto text-center text-sm-left">
-          <h5 id="datetime"></h5>
-          <script>
-                            var dt = new Date();
-                            document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + ((
-                                "0" + (dt.getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt
-                                .getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
-                        </script>
-        </div>
-        <div class="col-sm-3 my-auto text-center text-sm-left">
-          <div class="fontSize"> <a href="#">Skip to main content</a>
-            <ul>
-              <li><a href="#">A-</a></li>
-              <li><a href="#">A</a></li>
-              <li><a href="#">A+</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4 my-auto text-center text-sm-left">
-          <div class="adminArea">
-            <ul>
-              <li><a href="admin/">Admin Login</a></li>
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Translator</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-2 my-auto text-center text-sm-left">
-          <div class="searchArea">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search Here">
-              <div class="input-group-append"> <span class="input-group-text"><i class="fa fa-search"></i></span> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="mainHeader">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 px-0">
-          <figure class="hdrImg"> <img src="img/rpmiHeader.png" alt=""> </figure>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="siteTopNav">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 px-sm-0">
-          <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                                aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item active"> <a class="nav-link" href="index.php"><i class="fa fa-home"></i> Home <span
-                                                class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="about_us.php">About Us <span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="our_team.php">Team <span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                            role="button" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false"> Decision Support System </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="#">Another action</a> </li>
-                    <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false"> Decision Support System </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li class="nav-item"><a class="dropdown-item" href="#">Action</a> </li>
-                        <li class="nav-item"><a class="dropdown-item" href="#">Another
-                          action</a></li>
-                        <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="#"
-                                                            id="navbarDropdownMenuLink" role="button"
-                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false"> Decision Support System </a>
-                          <ul class="dropdown-menu"
-                                                            aria-labelledby="navbarDropdownMenuLink">
-                            <li class="nav-item"><a class="dropdown-item"
-                                                                    href="#">Action</a></li>
-                            <li class="nav-item"><a class="dropdown-item"
-                                                                    href="#">Another action</a></li>
-                            <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="#"
-                                                                    id="navbarDropdownMenuLink" role="button"
-                                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                                    aria-expanded="false"> Decision Support System </a>
-                              <ul class="dropdown-menu"
-                                                                    aria-labelledby="navbarDropdownMenuLink">
-                                <li class="nav-item"><a class="dropdown-item"
-                                                                            href="#">Action</a></li>
-                                <li class="nav-item"><a class="dropdown-item"
-                                                                            href="#">Another action</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item"> <a class="nav-link" href="#">Rice Pest Lab <span
-                                                class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="help_faq.php">Help & Faq <span
-                                                class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#">Citation <span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="contact_us.php">Contact Us <span
-                                                class="sr-only">(current)</span></a> </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </section>
-</header>
+ <?php include("header.php"); ?>
 <main class="mainBody">
   <section class="sliderArea">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-2 px-sm-0">
-          <div class="siteLeftNav">
-            <nav class="navbar navbar-expand-lg">
-              <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown"
-                                    aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown1">
-                <ul class="navbar-nav">
-                  <li class="nav-item active"> <a class="nav-link" href="#">Rice Insect Pests <span
-                                                    class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="#">Rice Diseases <span
-                                                    class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="ourTeam.php">Team <span class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false"> Decision Support System </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
-                      <li class="nav-item"><a class="dropdown-item" href="#">Another
-                        action</a></li>
-                      <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="#"
-                                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false"> Decision Support System </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li class="nav-item"><a class="dropdown-item"
-                                                                href="#">Action</a></li>
-                          <li class="nav-item"><a class="dropdown-item" href="#">Another
-                            action</a></li>
-                          <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="#"
-                                                                id="navbarDropdownMenuLink" role="button"
-                                                                data-toggle="dropdown" aria-haspopup="true"
-                                                                aria-expanded="false"> Decision Support System </a>
-                            <ul class="dropdown-menu"
-                                                                aria-labelledby="navbarDropdownMenuLink">
-                              <li class="nav-item"><a class="dropdown-item"
-                                                                        href="#">Action</a></li>
-                              <li class="nav-item"><a class="dropdown-item"
-                                                                        href="#">Another action</a></li>
-                              <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle" href="#"
-                                                                        id="navbarDropdownMenuLink" role="button"
-                                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                                        aria-expanded="false"> Decision Support System </a>
-                                <ul class="dropdown-menu"
-                                                                        aria-labelledby="navbarDropdownMenuLink">
-                                  <li class="nav-item"><a class="dropdown-item"
-                                                                                href="#">Action</a></li>
-                                  <li class="nav-item"><a class="dropdown-item"
-                                                                                href="#">Another action</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item"> <a class="nav-link" href="#">Rice Pest Lab <span
-                                                    class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="help_faq.php">Help & Faq <span
-                                                    class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="#">Citation <span
-                                                    class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="contact_us.php">Contact Us <span
-                                                    class="sr-only">(current)</span></a> </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
+        <?php include("sidebar.php"); ?>
         <div class="col-sm-8">
           <div id="siteSlider" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -228,9 +40,7 @@
               <div class="carousel-item"> <img src="img/slider4.jpg" alt="..."> </div>
               <div class="carousel-item"> <img src="img/slider5.jpg" alt="..."> </div>
             </div>
-            <a class="carousel-control-prev" href="#siteSlider" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"><i
-                                        class="fa fa-chevron-left"></i></span> </a> <a class="carousel-control-next" href="#siteSlider" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"><i
-                                        class="fa fa-chevron-right"></i></span> </a> </div>
+            <a class="carousel-control-prev" href="#siteSlider" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-chevron-left"></i></span> </a> <a class="carousel-control-next" href="#siteSlider" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-chevron-right"></i></span> </a> </div>
         </div>
         <div class="col-sm-2 pl-sm-0">
           <div class="nyBox">
@@ -272,15 +82,8 @@
                   <h3>Welcome to Rice Pest Informatics and DSS.</h3>
                   <div class="bbDesc">
                     <figure class="bbImg"><img src="img/nrri.jpg" alt=""></figure>
-                    <p><span>Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of the
-                      printing and typesetting industry.</span><span> Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.</span><span> Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.Lorem Ipsum is simply dummy text of the
-                      printing and typesetting industry.</span> </p>
+                    <p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum is simply dummy text of the  printing and typesetting industry.</span><span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and  typesetting industry.</span><span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> </p>
                   </div>
                 </div>
               </div>
@@ -309,28 +112,22 @@
               <div id="vertical-ticker">
                 <ul id="xyz">
                   <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <a href="#">More...</a> </li>
                   <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <a href="#">More...</a> </li>
                   <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting  industry.</p>
                     <a href="#">More...</a> </li>
                   <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <a href="#">More...</a> </li>
                   <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <a href="#">More...</a> </li>
                   <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <a href="#">More...</a> </li>
                 </ul>
               </div>
@@ -400,7 +197,7 @@
             <div class="gaHeader">
               <h4>Video Gallery</h4>
             </div>
-            <div class="gaBody"> <a href="videoGallery.php"><img src="img/vdGallery.png" alt=""></a> </div>
+            <div class="gaBody"> <a href="video_gallery.php"><img src="img/vdGallery.png" alt=""></a> </div>
           </div>
         </div>
         <div class="col-sm-4">
@@ -408,7 +205,7 @@
             <div class="gaHeader">
               <h4>Photo Gallery</h4>
             </div>
-            <div class="gaBody"><a href="photoGallery.php"><img src="img/phGallery.png" alt=""></a></div>
+            <div class="gaBody"><a href="photo_gallery.php"><img src="img/phGallery.png" alt=""></a></div>
           </div>
         </div>
         <div class="col-sm-4">
@@ -416,55 +213,15 @@
             <div class="gaHeader">
               <h4>Team</h4>
             </div>
-            <div class="gaBody"><a href="ourTeam.php"><img src="img/team.png" alt=""></a></div>
+            <div class="gaBody"><a href="our_team.php"><img src="img/team.png" alt=""></a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 </main>
-<footer class="siteFooter">
-  <section class="footerInfo">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-5">
-          <ul class="fLinks">
-            <li><a href="#">Legal Disclaimer</a></li>
-            <li><a href="#">Privacy Statement</a></li>
-            <li><a href="#">Linking Policies</a></li>
-            <li><a href="#">Website Policies</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-4">
-          <div class="lastModify">
-            <p>
-              <script language="Javascript">
-                                    document.write("This page was last modified on: " + document.lastModified + "");
-                                </SCRIPT>
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="totalVisit">
-            <p>Total Visitor <a href="https://www.hitwebcounter.com" target="_blank"> <img src="https://hitwebcounter.com/counter/counter.php?page=7790714&style=0006&nbdigits=5&type=page&initCount=0"
-                                        title="Free Counter" Alt="web counter" border="0" /></a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="copyRight">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <p>&copy; ICAR- National Rice Research Institute. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <?php include("footer.php"); ?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="js/jquery.vticker.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>

@@ -392,6 +392,12 @@
             <a href="#" onclick="loginContent('about_us');"><i class="mr-3 far fa-clock fa-fw"></i><span>About Us</span></a>
           </li>
           <li class="sidebar-dropdown">
+            <a href="#" onclick="loginContent('faq');"><i class="mr-3 far fa-clock fa-fw"></i><span>FAQ</span></a>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#" onclick="loginContent('photo_gallery');"><i class="mr-3 far fa-clock fa-fw"></i><span>Photo Gallery</span></a>
+          </li>
+          <li class="sidebar-dropdown">
             <a href="#" onclick="loginContent('contact_us');"><i class="mr-3 far fa-clock fa-fw"></i><span>Contact Person</span></a>
           </li>
 
