@@ -13,13 +13,15 @@
 <!-- CSS Plugins -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/lightgallery.css">
 <!-- Custom Css -->
+<link rel="stylesheet" type="text/css" href="css/lightgallery.css">
 <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <!--Doctype Ends Here-->
 <body>
 <?php include("header.php"); ?>
+
+
 <main class="innerBody">
   <section class="innerBanner">
     <figure> <img src="img/banner/innerGalleryBanner.jpg" alt=""> </figure>
@@ -61,7 +63,7 @@
                                                 class="sr-only">(current)</span></a> </li>
                   <li class="nav-item"> <a class="nav-link" href="#">Rice Diseases <span
                                                 class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="our_team.php">Team <span class="sr-only">(current)</span></a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Team <span class="sr-only">(current)</span></a> </li>
                   <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                             role="button" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false"> Decision Support System </a>
@@ -107,31 +109,50 @@
                   </li>
                   <li class="nav-item"> <a class="nav-link" href="#">Rice Pest Lab <span
                                                 class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="help_faq.php">Help & Faq <span
+                  <li class="nav-item"> <a class="nav-link" href="#">Help & Faq <span
                                                 class="sr-only">(current)</span></a> </li>
                   <li class="nav-item"> <a class="nav-link" href="#">Citation <span
                                                 class="sr-only">(current)</span></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="contact_us.php">Contact Us <span
+                  <li class="nav-item"> <a class="nav-link" href="#">Contact Us <span
                                                 class="sr-only">(current)</span></a> </li>
                 </ul>
               </div>
             </nav>
           </div>
         </div>
-        <div class="col-sm-9">
+         <div class="col-sm-9">
           <div class="row" id="icarPhotos">
             
+           <?php
+              include('admin/common/database.mysqli.php');
+              $con_obj   = new common();
+              $fetch_res = $con_obj->select('photo_gallery', '*', NULL, "1", NULL);
+              $res       = $con_obj->numRows();
+              if ($res > 0) {
+                 
+                  $gallery = $con_obj->getResult();
+                  //echo '<pre>'; print_r($gallery); die;
+                  foreach ( $gallery as $key => $value) {
+                  	$imagePath = 'img/photo_gallery/'.$value['image'];
+					echo '<div class="col-sm-3"> <a href="'.$imagePath.'" class="photoBox"> <img src="'.$imagePath.'" alt=""> </a> </div>';
+                  }
+              } else {
+
+                  echo '<div class="nbBody">No Records Found</div>';
+              }
+            ?>
           </div>
         </div>
       </div>
     </div>
   </section>
 </main>
+
+
+
 <?php include("footer.php"); ?>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="js/jquery.vticker.min.js"></script>
 <script src="js/lightgallery-all.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script>
@@ -152,20 +173,9 @@
             });
         })(jQuery)
     </script>
+
 <script>
-        $(function () {
-            
-            // view_achievement_details();
-            // get_banner_details();
-            // get_latest_news_details();
-            // get_news_updates_details();
-        });
-    </script>
-<script>
-        $(document).ready(function(){
-            get_photo_gallery_details();
-            
-        });
+        
     </script>
 </body>
 </html>

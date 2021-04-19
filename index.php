@@ -68,14 +68,33 @@
             <div class="nbHeader">
               <h4>Achievements</h4>
             </div>
-            <div class="nbBody">
-              <marquee behavior="scroll" direction="up">
-              <table id="scrolling-table">
-                <tbody id="show_achievements_table">
-                </tbody>
-              </table>
-              </marquee>
-            </div>
+
+            <?php
+              include('admin/common/database.mysqli.php');
+              $con_obj   = new common();
+              $fetch_res = $con_obj->select('achievements', '*', NULL, NULL, NULL);
+              $res       = $con_obj->numRows();
+              if ($res > 0) {
+                  echo '<div class="nbBody"><marquee behavior="scroll" direction="up"><table id="scrolling-table"><tbody id="show_achievements_table">';
+
+                  foreach ($con_obj->getResult() as $key => $value) {
+
+                    $label = $value['label1'];
+                    if(strlen($label) > 25) {
+                      $label = substr($label, 0,22) . '..';
+                    }
+                    
+                    echo "<tr><td style='text-transform: capitalize;'>".$label."</td></tr>";
+                  }
+
+                  echo '</tbody></table></marquee></div>';
+
+              } else {
+
+                  echo '<div class="nbBody">No Records Found</div>';
+              }
+            ?>
+
           </div>
         </div>
       </div>
@@ -89,10 +108,29 @@
             <div class="smHeader">
               <h4>News & Updates</h4>
             </div>
+
+            <?php
+             
+              $fetch_res = $con_obj->select('news_updates', '*', NULL, NULL,"id DESC","1");
+              $res       = $con_obj->numRows();
+              if ($res > 0) {
+                  $data = $con_obj->getResult();
+                  echo '<div class="smBody" id="news_updates_div"><figure class="smImg">
+                        <img src="img/news/'.$data[0]['image'].'" alt=""> </figure>
+                        <a href="#" class="moreBtn">More</a> </div>';
+
+              } else {
+
+                   echo '<div class="smBody" id="news_updates_div">No Records Found</div>';
+              }
+            ?>
+
             <div class="smBody" id="news_updates_div">
               <figure class="smImg"> <img src="img/growth.png" alt=""> </figure>
               <a href="#" class="moreBtn">More</a> </div>
           </div>
+
+
         </div>
         <div class="col-sm-9">
           <div class="row">
@@ -129,30 +167,25 @@
             <div class="mbHeader">
               <h4>Latest News</h4>
             </div>
-            <div class="mbBody">
-              <div id="vertical-ticker">
-                <ul id="xyz">
-                  <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="#">More...</a> </li>
-                  <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="#">More...</a> </li>
-                  <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting  industry.</p>
-                    <a href="#">More...</a> </li>
-                  <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="#">More...</a> </li>
-                  <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="#">More...</a> </li>
-                  <li>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <a href="#">More...</a> </li>
-                </ul>
-              </div>
-            </div>
+
+            <?php
+
+            echo '<div class="mbBody"><div id="vertical-ticker"><ul id="xyz">';
+            $fetch_res = $con_obj->select('latest_news', '*', NULL, NULL,"id DESC");
+           
+            $res = $con_obj->numRows();
+            if ($res > 0) {
+
+                foreach ($con_obj->getResult() as $key => $value)
+                  echo '<li><p>'.$value['news'].'</p><a href="#">More...</a> </li>';
+            } else {
+
+                echo '<li><p>No Records Found</p></li>';
+            }
+            echo '</ul></div></div>';
+            ?>
+           
+
           </div>
         </div>
         <div class="col-sm-3">
@@ -185,11 +218,15 @@
               <h4>Quick Links</h4>
             </div>
             <div class="mbBody"  id="vertical-ticker1">
+              
+              <!=
               <ul class="qLinks">
                 <li><a href="#">Rice Pest Lab</a></li>
                 <li><a href="#">ICAR-National Rice Research Institute</a></li>
                 <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
               </ul>
+
+
             </div>
           </div>
         </div>
@@ -295,10 +332,10 @@
 <script>
         $(function () {
             
-            view_achievement_details();
-            get_banner_details();
-            get_latest_news_details();
-            get_news_updates_details();
+            //view_achievement_details();
+           // get_banner_details();
+            //get_latest_news_details();
+            ///get_news_updates_details();
         });
     </script>
 </body>
