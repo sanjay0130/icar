@@ -16,9 +16,11 @@
                                                     <h5 style="color:#D35400;">Banner Info</h5>
                                                     <div class="card-body">
                                                         <form id="banner_name_form" name="banner_name_form" enctype="multipart/form-data" class="form-inline">
+                                                             <label class="form_label" for="title">Title</label>
+<input type="text" class="form-control" id="title" name="title" data-toggle="tooltip" data-placement="top" title="tab4"/>
                                                             <label class="form_label" for="Branch_name"> Upload File</label>
                                                             <input type="file" class="form-control" id="image" name="image[]" data-toggle="tooltip" data-placement="top" title="tab4" multiple/>
-
+															
                                                             <button type="button" class="btn btn-primary mb-2" onclick="create_banner();">Submit</button>
                                                         </form>
                                                     </div>
@@ -37,6 +39,9 @@
                                     <tr>
                                         <th>
                                             Sl
+                                        </th>
+                                         <th>
+                                    Title
                                         </th>
                                         <th>
                                             Banner

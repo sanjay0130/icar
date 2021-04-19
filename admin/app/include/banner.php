@@ -15,13 +15,15 @@ if ($actions == 'create_banner')
     {
         $image = $_FILES["image"]["name"][$i]; 
         $tempname = $_FILES["image"]["tmp_name"][$i];  
+        $title = $_POST['title'];  
+
              
         //$tempname='img.jpg'; 
         $d = new DateTime();//20201130170200295
         $image_name= $d->format("YmdHisv"); // v : Milliseconds 
         $image_path =$image_name.".jpg";
         $folder ="../../../img/banner/".$image_name.".jpg";
-        $insert_res = $con_obj->insert('banner', array('image' => $image_path));
+        $insert_res = $con_obj->insert('banner', array('title'=>$title,'image' => $image_path));
         if (move_uploaded_file($tempname, $folder)) 
         { 
             $msg = "images uploaded successfully"; 
