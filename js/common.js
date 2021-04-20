@@ -244,14 +244,18 @@ function get_team_info()
               var counter  = i+1;
               var status=jsonobj[i]['status'];
               var id=jsonobj[i]["id"];
-              tag += `<div class="col-sm-3">
-                        <div class="teamBoy">
-                          <figure><img src="uploads/`+jsonobj[i]['member_photo']+`" alt=""></figure>
-                          <div class="tyBody">
-                            <h4>`+jsonobj[i]['team_member_name']+`<small>`+jsonobj[i]['member_designation']+`</small></h4>
-                          </div>
-                        </div>
-                      </div>`;            
+
+              tag += '<div class="col-sm-3">'+
+                        '<div class="teamBoy">'+
+                            '<figure><img src="uploads/'+jsonobj[i]['member_photo']+'" alt=""></figure>'+
+                            '<div class="tyBody">'+
+                                '<h4>'+jsonobj[i]['team_member_name']+'<small>'+jsonobj[i]['member_designation']+'</small></h4>'+
+                                '<a href="#" onclick="openModal(\''+jsonobj[i].mobile_no+'\', \''+jsonobj[i].email_id+'\')" class="popBtn" data-toggle="modal" data-target="#ssModal">Contact</a>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>';
+
+              
             }
             document.getElementById('team_member_id').innerHTML=tag; 
         } else {
@@ -263,6 +267,12 @@ function get_team_info()
     });
 }
 
+function openModal(mobile_no, email_id) {
+
+  var modalBodyHtml = '<p><label>Mail ID:</label> <span>'+email_id+'</span></p><p><label>Mob:</label> <span>'+mobile_no+'</span></p>';
+  $('#ssModal .modal-body').html(modalBodyHtml);
+  $('#ssModal').modal('show');
+}
 
 function create_contact() {
      var formData = new FormData(contact_us_form);
