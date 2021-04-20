@@ -13,11 +13,13 @@ if ($actions == 'create_team') {
     $designation = $con_obj->escapeString($_POST['designation']);
     $photo = $_FILES['image']['name'];
     $imagee = $_FILES['image']['tmp_name'];
+    $mobile_no = $_POST['mobile_no'];
+    $email_id = $_POST['email_id'];
     $image = "../../../uploads/" . basename($photo);
     move_uploaded_file($imagee,$image);
     
 
-    $insert_res = $con_obj->insert('team', array('team_member_name' => $name,'member_designation' => $designation ,'member_photo' =>$photo));
+    $insert_res = $con_obj->insert('team', array('team_member_name' => $name,'member_designation' => $designation ,'member_photo' =>$photo ,'mobile_no' =>$mobile_no ,'email_id' =>$email_id));
     // echo $con_obj->getSql();
     $con_obj->closeConnection();
     echo $insert_res;
@@ -87,6 +89,8 @@ if ($actions == 'delete_team') {
 if ($actions == 'upd_team') {
     
     $name_up = $con_obj->escapeString($_POST['name_up']);
+    $mobile_no = $con_obj->escapeString($_POST['mobile_no_up']);
+    $email_id = $con_obj->escapeString($_POST['email_id_up']);
     $designation_up = $con_obj->escapeString($_POST['designation_up']);
     $image = $_FILES['image_up']['name'];
     $imagee = $_FILES['image_up']['tmp_name'];
@@ -94,7 +98,7 @@ if ($actions == 'upd_team') {
     move_uploaded_file($imagee,$image_up);
     $update_id = $con_obj->escapeString($_POST['id']);
 
-    $insert_res = $con_obj->update('team', array('team_member_name' => $name_up,'member_designation' => $designation_up ,'member_photo' =>$image),"id='$update_id'");
+    $insert_res = $con_obj->update('team', array('team_member_name' => $name_up,'member_designation' => $designation_up ,'member_photo' =>$image,'mobile_no' =>$mobile_no ,'email_id' =>$email_id),"id='$update_id'");
 
     $con_obj->closeConnection();
     echo $insert_res;
