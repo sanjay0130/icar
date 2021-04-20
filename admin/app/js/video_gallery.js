@@ -1,5 +1,10 @@
 function create_video() {
-  
+  	  var ids=['v_link'];
+  var validation_type=[["blank"]];
+  var messeges=[["<span style='color:red;'>Link cannot be blank</span>"]];
+  var msg=validate(ids,validation_type,'err_msg',messeges);
+  if(msg == undefined)
+  { 
       var formData = new FormData(video_form);
       formData.append("action", "create_video");
       $.ajax({
@@ -28,6 +33,10 @@ function create_video() {
           loginContent("video_gallery");
         },
       });
+  }
+  else{
+  	return false;
+  }
     
 }
 

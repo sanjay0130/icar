@@ -1,5 +1,10 @@
 function create_photo_gallery() {
-
+   var ids=['image'];
+  var validation_type=[["blank"]];
+  var messeges=[["<span style='color:red;'>Photo cannot be blank</span>"]];
+  var msg=validate(ids,validation_type,'err_msg',messeges);
+  if(msg == undefined)
+  { 
   var formData = new FormData(photo_gallery_name_form);
   
   var image = $('#image')[0].files;
@@ -28,6 +33,9 @@ function create_photo_gallery() {
         loginContent("photo_gallery");
       },
     });
+   }else{
+    return false;
+   }
     
   }
 

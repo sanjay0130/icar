@@ -2,7 +2,12 @@
 
 function create_faq()
 {
-  
+   var ids=['label_1','desc'];
+  var validation_type=[["blank"],["blank"]];
+  var messeges=[["<span style='color:red;'>Label cannot be blank</span>"],["<span style='color:red;'>Description cannot be blank</span>"]];
+  var msg=validate(ids,validation_type,'err_msg',messeges);
+  if(msg == undefined)
+  { 
   var formData = new FormData(faq_name_form);
     formData.append('action','create_faq');
     $.ajax({
@@ -34,6 +39,9 @@ function create_faq()
           loginContent('faq');
         }
     });
+  }else{
+    return false;
+  }
 }
 // // ------------- show data in table -----------
 

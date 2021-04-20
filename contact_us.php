@@ -62,11 +62,11 @@
               <form action="" class="suggestForm" id="contact_us_form" name="contact_us_form"> 
                 <div class="form-group">
                   <label for="">Name</label>
-                  <input type="text" class="form-control" name="name">
+                  <input type="text" class="form-control" name="name" id="name" required="required">
                 </div>
 				<div class="form-group">
                   <label for="">Mobile No</label>
-                  <input type="text" class="form-control" name="mobile">
+                  <input type="text" class="form-control" name="mobile" id="mobile" required="required">
                 </div>
                 <div class="form-group">
                   <label for="">Email</label>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="form-group">
                   <label for="">Message</label>
-                  <textarea class="form-control" name="message"></textarea>
+                  <textarea class="form-control" name="message" id="message" required="required"></textarea>
                 </div>
                 <button class="moreBtn" type="button" onClick="create_contact();">Submit</button>
               </form>
@@ -119,6 +119,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="js/jquery.vticker.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="admin/common_js/validate.js"></script>
 <script>
         (function ($) {
 

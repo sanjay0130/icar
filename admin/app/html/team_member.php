@@ -48,7 +48,7 @@
                                                    </div>
                                                    <div class="col-md-3">
                                                       <label>Photo</label>
-                                                      <input type="file" id="image" name="image" class="form-control ">
+                                                      <input type="file" id="image" name="image" class="form-control">
                                                    </div>
                                                    
                                                   

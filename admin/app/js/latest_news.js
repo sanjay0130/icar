@@ -2,7 +2,12 @@
 
 function create_latest_news()
 {
-  
+    var ids=['latest_news'];
+  var validation_type=[["blank"]];
+  var messeges=[["<span style='color:red;'>Latest News cannot be blank</span>"]];
+  var msg=validate(ids,validation_type,'err_msg',messeges);
+  if(msg == undefined)
+  { 
   var formData = new FormData(latest_news_form);
     formData.append('action','create_latest_news');
     $.ajax({
@@ -34,6 +39,9 @@ function create_latest_news()
           loginContent('latest_news');
         }
     });
+  }else{
+    return false;
+  }
 }
 // // ------------- show data in table -----------
 
