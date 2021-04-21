@@ -31,7 +31,7 @@
             include('admin/common/database.mysqli.php');
             $con_obj = new common();
 
-            $fetch_res = $con_obj->select('banner', '*', NULL, "1", NULL);
+            $fetch_res = $con_obj->select('banner', '*', NULL, "1", "created_at DESC");
             $res = $con_obj->numRows();
             if ($res > 0) {
                 $res = $con_obj->getResult();
