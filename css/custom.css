@@ -786,7 +786,7 @@ figure {
 
 .teamBoy figure{
     overflow: hidden;
-    height: 200px;
+    height: 275px;
     border: 1px solid #fff;
 }
 .teamBoy figure img{width:100%;height: 100%;object-fit: cover;}
