@@ -63,10 +63,10 @@
                                                    <label>Label1</label>
                                                    <input type="text" id="label1_up" name="label1_up" class="form-control">
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-9">
                                                    <label>Content*</label>
                                                    
-                                                   <textarea id="v_link_up" name="v_link_up"></textarea>
+                                                   <textarea id="v_link_up" name="v_link_up" class="form-control" rows="6"></textarea>
                                                 </div>
                                               
                                                
