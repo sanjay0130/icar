@@ -98,7 +98,7 @@
 
                     $label = $value['label1'];
                     if(strlen($label) > 25) {
-                      $label = substr($label, 0,22) . '..';
+                      //$label = substr($label, 0,22) . '..';
                     }
                     
                     echo "<li>".$label."</li>";
@@ -239,6 +239,7 @@
                 <li><a href="#">Rice Pest Lab</a></li>
                 <li><a href="#">ICAR-National Rice Research Institute</a></li>
                 <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
+                <li><a href="#">ICAR Department</a></li>
               </ul>
 
 
@@ -252,6 +253,8 @@
             </div>
             <div class="mbBody"  id="vertical-ticker2">
               <ul class="impLinks">
+                <li><a href="#">...............</a></li>
+                <li><a href="#">...............</a></li>
                 <li><a href="#">...............</a></li>
                 <li><a href="#">...............</a></li>
                 <li><a href="#">...............</a></li>
@@ -321,7 +324,7 @@
             $('#vertical-ticker').vTicker({
                 speed: 700,
                 pause: 4000,
-                showItems: 3,
+                showItems: 5,
                 mousePause: true,
                 animate: true,
                 startPaused: false
@@ -329,7 +332,7 @@
             $('#vertical-ticker1').vTicker({
               speed: 700,
               pause: 4000,
-              showItems: 4,
+              showItems: 5,
               mousePause: true,
               animate: true,
               startPaused: false
@@ -337,7 +340,7 @@
           $('#vertical-ticker2').vTicker({
             speed: 700,
             pause: 4000,
-            showItems: 4,
+            showItems: 5,
             mousePause: true,
             animate: true,
             startPaused: false
@@ -345,10 +348,13 @@
         $('#vertical-ticker3').vTicker({
             speed: 700,
             pause: 4000,
-            showItems: 5,
+            showItems: 10,
             mousePause: true,
-            animate: true,
-            startPaused: false
+            animate: false,
+            startPaused: false,
+            padding:4,
+            margin:10,
+            height: 0,
         });
         });
     </script>
