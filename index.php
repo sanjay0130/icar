@@ -192,7 +192,7 @@
             if ($res > 0) {
 
                 foreach ($con_obj->getResult() as $key => $value)
-                  echo '<li><p>'.$value['news'].'</p><a href="#">More...</a> </li>';
+                  echo '<li><p>'.$value['news'].'</p><a href="./details.php?id='.$value['id'].'">More...</a> </li>';
             } else {
 
                 echo '<li><p>No Records Found</p></li>';
