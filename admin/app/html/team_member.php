@@ -50,7 +50,14 @@
                                                       <label>Photo</label>
                                                       <input type="file" id="image" name="image" class="form-control">
                                                    </div>
-                                                   
+                                                  <div class="col-md-3">
+                                                   <label class="form_label" for="mobile_no">Mobile No</label>
+                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="mobile_no" name="mobile_no" placeholder="Mobile No" data-toggle="tooltip" data-placement="top" title="Mobile No">
+                                                  </div>
+                                                    <div class="col-md-3">
+                                                    <label class="form_label" for="email_id">Email</label>
+                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="email_id" name="email_id" placeholder="Email Id" data-toggle="tooltip" data-placement="top" title="Email Id">
+                                                   </div>
                                                   
                                                 </div>
                                              </div>
@@ -89,6 +96,8 @@
                                                 <th class="border-top-0">Name</th>
                                                 <th class="border-top-0">Designaion</th>
                                                 <th class="border-top-0">Photo</th>
+                                                <th class="border-top-0">Mobile No</th>
+                                                <th class="border-top-0">Email Id</th>
                                                 
                                                 <th class="action">Status</th>
                                                 <th class="border-top-0">Edit</th>
@@ -141,7 +150,14 @@
                                                       <label>Photo</label>
                                                       <input type="file" id="image_up" name="image_up" class="form-control ">
                                                    </div>
-                                              
+                                                <div class="col-md-3">
+                                                   <label class="form_label" for="mobile_no_up">Mobile No</label>
+                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="mobile_no_up" name="mobile_no_up" placeholder="Mobile No" data-toggle="tooltip" data-placement="top" title="Mobile No">
+                                                  </div>
+                                                    <div class="col-md-3">
+                                                    <label class="form_label" for="email_id_up">Email</label>
+                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="email_id_up" name="email_id_up" placeholder="Email Id" data-toggle="tooltip" data-placement="top" title="Email Id">
+                                                   </div>
                                                
                                              </div>
                                           </div>

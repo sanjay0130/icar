@@ -76,13 +76,16 @@ function get_team_info()
             var base_url = window.location;
             var photo_path_temp='../../uploads/'+jsonobj[i]['member_photo'];
             tag += '<td> <img src="'+photo_path_temp+'" width="50" height="30" /> </td>';
-           
+            tag+="<td style='text-transform: capitalize;'>"+jsonobj[i]['mobile_no']+"</td>";
+             tag+="<td style='text-transform: capitalize;'>"+jsonobj[i]['email_id']+"</td>";
             // //code for view all user details
             var edit_array_view={
             "id":jsonobj[i]['id'],
             "team_member_name":jsonobj[i]['team_member_name'],
             "member_designation":jsonobj[i]['member_designation'],
             "image":jsonobj[i]['member_photo'],
+            "mobile_no":jsonobj[i]['mobile_no'],
+            "email_id":jsonobj[i]['email_id'],
             "status":jsonobj[i]['status']
             };
             var edit_json_view=JSON.stringify(edit_array_view);
@@ -199,6 +202,8 @@ function edit_team(get_product_data) {
 
   document.getElementById("name_up").value = get_product_data["team_member_name"];
   document.getElementById("designation_up").value = get_product_data["member_designation"];
+  document.getElementById("mobile_no_up").value = get_product_data["mobile_no"];
+  document.getElementById("email_id_up").value = get_product_data["email_id"];
   $("#show_image1_photo").html('<img src="'+photo_path_temp+'" width="50" height="50" />');
   document.getElementById("hide_id").value = get_product_data["id"];
 }

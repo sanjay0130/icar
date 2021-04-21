@@ -16,10 +16,10 @@
 
                             <label class="form_label" for="label_1">Photo</label>
                             <input type="file" class="form-control mb-2 mr-sm-2" id="photo" name="photo" placeholder="Photo" data-toggle="tooltip" data-placement="top" title="Photo">
-                            <!-- <label class="form_label" for="label_2">label 2</label>
-                            <input type="text" class="form-control mb-2 mr-sm-2" id="label_2" name="label_2" placeholder="Label 2" data-toggle="tooltip" data-placement="top" title="Label 1">
-                            <label class="form_label" for="label_3">label 3</label>
-                            <input type="text" class="form-control mb-2 mr-sm-2" id="label_3" name="label_3" placeholder="Label 3" data-toggle="tooltip" data-placement="top" title="Label 3"> -->
+                            <label class="form_label" for="mobile_no">Mobile No</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="mobile_no" name="mobile_no" placeholder="Mobile No" data-toggle="tooltip" data-placement="top" title="Mobile No">
+                            <label class="form_label" for="email_id">Email</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="email_id" name="email_id" placeholder="Email Id" data-toggle="tooltip" data-placement="top" title="Email Id">
 
                             <button type="button" class="btn btn-primary mb-2" onclick="create_achievement();">Submit</button>
                         </form>
@@ -45,7 +45,10 @@
                                         <th>
                                             Designation
                                         </th>
-                                        <th>
+                                        
+                                        <th>Email</th>
+                                        <th>Mobile</th>
+                                       <th>
                                             Photo
                                         </th>
                                         <th>
@@ -73,7 +76,7 @@
 <aside id="example" class="modal">
     <div id="md_div">
         <div class="modal_heading">
-            <h4 class="modal_title">Update Achievement</h4>
+            <h4 class="modal_title">Update Team Member</h4>
         </div>
         <form id="modal_form_update" name="modal_form_update" class="form-inline">
             <input type="hidden" name="hide_id" id="hide_id">
