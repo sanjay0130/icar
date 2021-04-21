@@ -834,6 +834,25 @@ figure {
 .innerBody .icarAbout {
     padding: 3em 0;
 }
+.innerBody .icarContact{
+    padding: 3em 0;
+}
+.innerBody .icarContact h3{
+    margin-bottom: 1em
+}
+.innerBody .icarContact .contDetails{}
+.innerBody .icarContact .contDetails article{
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+.innerBody .icarContact .contDetails h4{}
+.innerBody .icarContact .contDetails p{
+    margin: 1em 0;
+    text-align: center;
+}
+.innerBody .icarContact .contDetails article p{
+    text-align:left;
+}
 .innerBody .icarFaq {
     padding: 3em 0;
 }

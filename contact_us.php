@@ -45,19 +45,14 @@
       </div>
     </div>
   </section>
-  <section class="innerContent icarAbout">
+  <section class="innerContent icarContact">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-9">
+      
           <div class="row">
-            <div class="col-sm-4">
-              <figure class="aboutImg"> <img src="img/nrri.jpg" alt="">
-                
-              </figure>
-            </div>
-            <div class="col-sm-8">
-              <div class="aboutInfo">
-                <h3>Contact Us</h3>
+           
+            <div class="col-sm-6">
+              <div class="contactForm">
+                <h3>User Information</h3>
                  <div class="mbBody">
               <form action="" class="suggestForm" id="contact_us_form" name="contact_us_form"> 
                 <div class="form-group">
@@ -76,38 +71,45 @@
                   <label for="">Message</label>
                   <textarea class="form-control" name="message" id="message" required="required"></textarea>
                 </div>
-                <button class="moreBtn" type="button" onClick="create_contact();">Submit</button>
+                <button class="btn btn-success" type="button" onClick="create_contact();">Submit</button>
               </form>
             </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="miniBox">
-            <div class="mbHeader">
-              <h4>Quick Links</h4>
-            </div>
-            <div class="mbBody" id="vertical-ticker1">
-              <ul class="qLinks">
-                <li><a href="#">Rice Pest Lab</a></li>
-                <li><a href="#">ICAR-National Rice Research Institute</a></li>
-                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="miniBox">
-            <div class="mbHeader">
-              <h4>Quick Links</h4>
-            </div>
-            <div class="mbBody" id="vertical-ticker2">
-              <ul class="qLinks">
-                <li><a href="#">Rice Pest Lab</a></li>
-                <li><a href="#">ICAR-National Rice Research Institute</a></li>
-                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
-              </ul>
+            <div class="col-sm-6">
+              <div class="contDetails">
+                <h3>Contact Us</h3>
+                <article>
+                  <h4>Dr S D Mohapatra</h4>
+                  <p>ICAR - National Rice Research Institute
+<br>Cuttack - 753 006, Odisha, India
+<br>E-mail - S.DasMohapatra@icar.gov.in
+Mob No. - 8280249204</p>
+                </article>
+                <p>Or</p>
+                <article>
+                  <h4>Director</h4><p>
+ICAR - National Rice Research Institute
+<br>Cuttack - 753 006, Odisha, India
+<br>E-mail - director.nrri@icar.gov.in
+<br>Ph No. - 0671-2367757
+<br>EPBX: +91-671-2367768-783
+Fax: +91-671-2367663</p>
+                </article>
+              </div>
             </div>
           </div>
+        
+      
+    </div>
+  </section>
+  <section class="mapSection">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 px-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.2794230433115!2d85.931581114398!3d20.453713512536922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1973ebcec4bfbb%3A0x874fb9e2cac50b4f!2sICAR-NATIONAL%20RICE%20RESEARCH%20INSTITUTE%20(NRRI%2CCRRI)!5e0!3m2!1sen!2sin!4v1618995245977!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+          
         </div>
       </div>
     </div>
@@ -120,6 +122,7 @@
 <script type="text/javascript" src="js/jquery.vticker.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="admin/common_js/validate.js"></script>
+
 <script>
         (function ($) {
 
@@ -147,26 +150,6 @@
             // get_news_updates_details();
         });
     </script>
-<script>
-        $(document).ready(function(){
-            
-            $('#vertical-ticker1').vTicker({
-              speed: 700,
-              pause: 4000,
-              showItems: 4,
-              mousePause: true,
-              animate: true,
-              startPaused: false
-          });
-          $('#vertical-ticker2').vTicker({
-            speed: 700,
-            pause: 4000,
-            showItems: 4,
-            mousePause: true,
-            animate: true,
-            startPaused: false
-        });
-        });
-    </script>
+
 </body>
 </html>
