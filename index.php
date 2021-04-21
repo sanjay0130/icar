@@ -90,7 +90,7 @@
               $fetch_res = $con_obj->select('achievements', '*', NULL, NULL, NULL);
               $res       = $con_obj->numRows();
               if ($res > 0) {
-                  echo '<div class="nbBody"><marquee behavior="scroll" direction="up"><table id="scrolling-table"><tbody id="show_achievements_table">';
+                  echo '<div class="nbBody" id="vertical-ticker3"><ul>';
 
                   foreach ($con_obj->getResult() as $key => $value) {
 
@@ -99,10 +99,10 @@
                       $label = substr($label, 0,22) . '..';
                     }
                     
-                    echo "<tr><td style='text-transform: capitalize;'>".$label."</td></tr>";
+                    echo "<li>".$label."</li>";
                   }
 
-                  echo '</tbody></table></marquee></div>';
+                  echo '</ul></div>';
 
               } else {
 
@@ -140,9 +140,7 @@
               }
             ?>
 
-            <div class="smBody" id="news_updates_div">
-              <figure class="smImg"> <img src="img/growth.png" alt=""> </figure>
-              <a href="#" class="moreBtn">More</a> </div>
+            
           </div>
 
 
@@ -234,7 +232,7 @@
             </div>
             <div class="mbBody"  id="vertical-ticker1">
               
-              <!=
+            
               <ul class="qLinks">
                 <li><a href="#">Rice Pest Lab</a></li>
                 <li><a href="#">ICAR-National Rice Research Institute</a></li>
@@ -338,6 +336,14 @@
             speed: 700,
             pause: 4000,
             showItems: 4,
+            mousePause: true,
+            animate: true,
+            startPaused: false
+        });
+        $('#vertical-ticker3').vTicker({
+            speed: 700,
+            pause: 4000,
+            showItems: 5,
             mousePause: true,
             animate: true,
             startPaused: false
