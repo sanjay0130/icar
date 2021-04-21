@@ -31,25 +31,7 @@
                 <p>ICAR - National Rice Reaserch Institute</p>
             </div>
         </section>
-        <section class="headLines">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-12 px-0">
-                     <h3 class="newsHd">Recent Events</h3>
-                     <div class="rollNews my-auto">
-                         <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>                              
-                               <p><a href="#">ICAR - National Rice Reaserch Institute</a></p>
-                        </marquee>
-                    </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-        
+        <?php include('red_marque.php') ?>
         <section class="teamAll">
             <div class="container-fluid">
                 <div class="row" id="team_member_id">

@@ -20,6 +20,8 @@
 <body>
  <?php include("header.php"); ?>
 <main class="mainBody">
+  <?php include('red_marque.php') ?>
+  <br>
   <section class="sliderArea">
     <div class="container-fluid">
       <div class="row">
