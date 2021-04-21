@@ -19,6 +19,10 @@
                                                           <label class="form_label" for="label_1">Latest News</label>
                                                           <input type="text" class="form-control mb-2 mr-sm-2" id="latest_news" name="latest_news" placeholder="Latest News" data-toggle="tooltip" data-placement="top" title="Latest News">
                                                           
+
+                                                          <label class="form_label" for="label_1">Description</label>
+                                                          <textarea rows="6" cols="30" class="form-control" id="latest_news_desc" name="latest_news_desc" placeholder="Description" data-toggle="tooltip" data-placement="top" title="Description"></textarea>
+
                                                           <button type="button" class="btn btn-primary mb-2" onclick="create_latest_news();">Submit</button>
                                                         </form>
                                                     </div>
@@ -37,6 +41,7 @@
                                     <tr>
                                       <th> Sl No.</th>
                                       <th> Latest News </th>
+                                      <th> Description </th>
                                       <th> Edit </th>
                                       <th> Delete </th>
                                     </tr>
@@ -73,6 +78,9 @@
                                               <input type="hidden" name="hide_id" id="hide_id">
                                               <label class="form_label" for="label1">Latest News</label>
                                               <input type="text" class="form-control mb-2 mr-sm-2" id="latest_news_up" name="latest_news_up" placeholder="Latest News">
+
+                                              <textarea rows="6" cols="30" class="form-control" id="latest_news_desc_modal" name="latest_news_desc_modal" placeholder="Description" data-toggle="tooltip" data-placement="top" title="Description"></textarea>
+
                                               
                                             </form>
                                         </div>

@@ -61,7 +61,7 @@ function get_latest_news_details()
         },
       
       success:function(response)
-        {
+        { 
           $('.loader').hide();
           
           var jsonobj=JSON.parse(response);
@@ -74,9 +74,14 @@ function get_latest_news_details()
           tag+="<tr>";
             tag+="<td>"+counter+"</td>";
             tag+="<td style='text-transform: capitalize;'>"+jsonobj[i]['news']+"</td>";
-           
+
+
+            var description = (jsonobj[i]['description'] == null) ? '-' : jsonobj[i]['description'].substring(0,20) + '...';
+            tag+="<td style='text-transform: capitalize;'>"+description+"</td>";
+
+
         //     // //code for view all user details
-            var edit_array_view={"id":jsonobj[i]['id'],"news":jsonobj[i]['news']};
+            var edit_array_view={"id":jsonobj[i]['id'],"news":jsonobj[i]['news'], "description":jsonobj[i]['description']};
             var edit_json_view=JSON.stringify(edit_array_view);
         
             tag+="<td><span  data-toggle='modal' data-target='#exampleModal' class='button' title='Edit' onclick='edit_lattest_news("+edit_json_view+");'><i style='color: #36a907;' class='mdi mdi-lead-pencil mx-0'></i></span></td>";
@@ -98,7 +103,7 @@ function get_latest_news_details()
 
 function edit_lattest_news(get_product_data){
   document.getElementById('latest_news_up').value=get_product_data['news'];
-  
+  $('#latest_news_desc_modal').text(get_product_data['description']);
   document.getElementById('hide_id').value=get_product_data['id'];
 }   
 

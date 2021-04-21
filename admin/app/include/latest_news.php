@@ -8,9 +8,10 @@ $actions = $con_obj->escapeString($_POST['action']);
 if ($actions == 'create_latest_news') {
 
     $latest_news = $con_obj->escapeString($_POST['latest_news']);
+    $latest_news_desc = $con_obj->escapeString($_POST['latest_news_desc']);
    
 
-    $insert_res = $con_obj->insert('latest_news', array('news' => $latest_news));
+    $insert_res = $con_obj->insert('latest_news', array('news' => $latest_news, 'description' => $latest_news_desc));
 
     $con_obj->closeConnection();
     echo $insert_res; 
@@ -36,9 +37,10 @@ if ($actions == 'get_latest_news_details') {
 
 if ($actions == 'upd_latest_news') {
     $latest_news = $con_obj->escapeString($_POST['latest_news_up']);
+    $latest_news_desc_modal = $con_obj->escapeString($_POST['latest_news_desc_modal']);
     
     $update_id = $con_obj->escapeString($_POST['id']);
-    $insert_res = $con_obj->update('latest_news', array('news' => $latest_news), "id='$update_id'");
+    $insert_res = $con_obj->update('latest_news', array('news' => $latest_news, 'description' => $latest_news_desc_modal), "id='$update_id'");
 
     $con_obj->closeConnection();
     echo $insert_res;
