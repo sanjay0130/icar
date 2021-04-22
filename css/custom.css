@@ -3,6 +3,7 @@
 body {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 h1,
@@ -35,10 +36,18 @@ figure {
 
 .mainBody {}
 
-.mainBody .sliderArea {}
+.mainBody .sliderArea {
+    margin-top: 0.5em;
+}
 
 .mainBody .sliderArea .carousel-item {
     height: 450px;
+    
+}
+.mainBody .sliderArea #siteSlider{
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 10%);
 }
 .mainBody .sliderArea .carousel-caption {
     position:absolute;
@@ -76,8 +85,8 @@ figure {
 
 .siteLeftNav {
     width: 100%;
-    background: #7abc32;
     height: 100%;
+    background: linear-gradient(to right, #8fc400 0%,#8fc400 100%);
 }
 
 .siteLeftNav .nav-link {
@@ -295,9 +304,11 @@ figure {
 
 .topBar {
 
-    background: #c2e8ce;
+background: #c2e8ce;
 
-    padding: .25em 0;
+padding: .25em 0;
+
+background: linear-gradient(to bottom, #dcf2e2 0%,#c2e8ce 37%,#9cd1ac 100%);
 }
 
 .topBar #datetime {
@@ -358,34 +369,66 @@ figure {
 .topBar .searchArea .input-group {}
 
 .nyBox {
-    background: #ededed;
+    background: #fff;
     height: 450px;
     overflow: hidden;
-    border-bottom: 20px solid #ededed;
-    border-radius: 1em 1em 0 0;
+    border-bottom: 20px solid #ffffff;
+    border-radius: 1em;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 10%);
 }
 
 .nyBox .nbHeader {
     background: #40a14c;
     border-radius: 1em 1em 0 0;
-    padding: 0.75em 1em;
+    padding: 0.75em 0;
     text-align: center;
+    background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
 }
 
 .nyBox .nbHeader h4 {
     color: #fff;
     line-height: 1em;
+    font-size: 1.5em;
 }
 
 .nyBox .nbBody {
     padding: 1em;
+    height: 100%;
 }
-
-.nyBox .nbBody table {
+.nyBox .nbBody marquee{
+    height:100%;
+}
+.nyBox .nbBody ul {
     width: 100%;
     margin: 0;
+    right: 0;
+    left: 0;
 }
 
+.nyBox .nbBody li {
+    width: 100%;
+    margin: 0!important;
+    height:auto!important;
+    list-style:none;
+    padding: 1em 2.5em!important;
+    position:relative;
+    border-bottom: 1px solid #ccc;
+}
+.nyBox .nbBody li:after {
+    content:'';
+    height: 25px;
+    width: 25px;
+    left: 0.5em;
+    position:absolute;
+    background:#40a14c;
+    top:0;
+    bottom:0;
+    margin:auto;
+    
+    background: url('https://ss-lp-uploads.s3.amazonaws.com/8cddba54-407c-4bec-aa95-a00ac3e9a703.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .siteFooter {}
 
 .siteFooter .footerInfo {
@@ -431,15 +474,18 @@ figure {
 
 .aboutArea {
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 .linkArea{
-    margin:1.5em 0;
 }
 .smBox {
     border-radius: 1em;
     height: 100%;
-    border: 1px solid #ccc;
     text-align: right;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 10%);
+    background: #fff;
 }
 
 .smBox .smHeader {
@@ -447,6 +493,7 @@ figure {
     padding: 0.75em 1em;
     text-align: center;
     border-radius: 1em 1em 0 0;
+    background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
 }
 
 .smBox .smHeader h4 {
@@ -500,6 +547,7 @@ figure {
     border-radius: .3em;
     border: 0;
     transition: .2s;
+    background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
 }
 
 .moreBtn:hover {
@@ -509,9 +557,14 @@ figure {
 }
 
 .bigBox {
-    border: 1px solid #ccc;
-    border-radius: .5em;
-    padding: 1em;
+    
+border-radius: 1em;
+    
+padding: 1.5em;
+    
+box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 10%);
+    
+background: #fff;
 }
 
 .bigBox .bbHeader {}
@@ -550,11 +603,20 @@ figure {
 }
 
 
-.imgBox {}
+.imgBox {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 10%);
+    border-radius: 1em;
+    overflow: hidden;
+}
 
 .imgBox .imBody {
     text-align: center;
     padding: 1em;
+    vertical-align: middle;
 }
 
 .imgBox .imBody h4 {
@@ -566,7 +628,7 @@ figure {
     width: 100%;
 }
 
-.miniBox {height: 100%;border: 1px solid #ccc;border-radius: 1em;overflow: hidden;}
+.miniBox {height: 300px;border-radius: 1em;overflow: hidden;box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 10%);background: #fff;}
 .icarAbout .miniBox {
     margin-top: 0;
     margin-bottom:1em;
@@ -574,8 +636,9 @@ figure {
 }
 .miniBox .mbHeader {
     background: #40a14c;
-    padding: 0.75em 1em;
+    padding: 0.75em 0;
     text-align: center;
+    background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
 }
 
 .miniBox .mbHeader h4 {
@@ -584,8 +647,7 @@ figure {
 
 .miniBox .mbBody {
     padding: 1em;
-    min-height: 250px;
-    height: auto !important;
+    position: relative!important;
 }
 
 .miniBox .mbBody .suggestForm {
@@ -624,32 +686,41 @@ figure {
     text-align: right;
     display: block;
 }
-
-
+.miniBox .mbBody .ttrLinks{position: relative!important;
+    margin-top:.1em!important}
+.miniBox .mbBody .ttrLinks li{list-style:none;height:auto!important;border-bottom: 1px solid #e0ff83;}
+.miniBox .mbBody .ttrLinks li:last-child{
+    boder:none;
+}
+.miniBox .mbBody .ttrLinks li a{color:#333;display:block;padding:.5em 0;color: #87b329;text-decoration: none;} 
+.miniBox .mbBody .ttrLinks li a:hover{
+    color:#333;
+}
 .miniBox .mbBody .qLinks {
+    position: relative!important;
+    margin-top: .1em!important;
 }
 
 .miniBox .mbBody .qLinks li {
-    padding: .5em 0 !important;
+    padding: 0.5em 0 !important;
     height: auto !important;
     position: relative;
     list-style: none;
-    padding-left: 1.5em !important;
-    display: flex;
-    align-items: top;
-
+    padding-left: 2em !important;
+    text-align: left;
 }
+
 .miniBox .mbBody .qLinks li a{
-    white-space:pre-wrap;
     width:100%;
-    padding-right:.5em
+    text-align:left;
+    display: block;
 }
 
 .miniBox .mbBody .qLinks li:before {
     content: url('https://www.computerhope.com/cdn/arrow.png');
     height: auto;
-    position: relative;
-    left: -1em
+    position: absolute;
+    left: 0;
 }
 
 .miniBox .mbBody .qLinks li a {
@@ -657,60 +728,70 @@ figure {
 }
 
 .miniBox .mbBody .impLinks {
-    padding-left: 2em;
+    position: relative!important;
+    margin-top: .1em!important;
 }
 
 .miniBox .mbBody .impLinks li {
     padding: .5em 0 !important;
     position: relative;
-    padding-left: 2em !important;
+    padding-left: 2.5em !important;
+    list-style:none;
     list-style: none;
-    display: flex;
-    justify-content: center;
-    height: auto !important
+    height: auto !important;
 }
 
 .miniBox .mbBody .impLinks li:before {
-    content: url('https://www.computerhope.com/cdn/arrow.png');
-    height: auto;
-    position: relative;
-    left: -1em
+    content: '';
+    height: 30px;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    background: url('https://i.gifer.com/YxAd.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:0;
+    bottom:0;
+    margin:auto;
 }
 
 .miniBox .mbBody .impLinks li a {
     color: #333;
+    text-decoration:None;
 }
-
+.miniBox .mbBody .impLinks li a:hover {
+    color:#9aca1d
+}
 .galleryArea {
-    margin-bottom: 2em;
+    padding: 2em 0;
 }
-
-.galleryArea .gaHeader {
+.gaBox{height: 300px;border-radius: 1em;overflow: hidden;box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 10%);background: #fff;}
+.gaHeader {
     background: #40a14c;
-    padding: 1.25em 1em;
+    padding: 0.75em 0;
     text-align: center;
     border-radius: 1em 1em 0 0;
     color: #fff;
+    background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
 }
 
-.galleryArea .gaBody {
-    border: 1px solid #ccc;
+.gaBody {
     border-radius: 0 0 1em 1em;
     text-align: center;
-    min-height: 285px
+    min-height: 285px;
 }
 
-.galleryArea .gaBody a {
+.gaBody a {
     display: block;
     padding: 3em;
 }
 
-.galleryArea .gaBody a img {
+.gaBody a img {
     width: 200px;
     transition: .2s
 }
 
-.galleryArea .gaBody a:hover img {
+.gaBody a:hover img {
     transform: scale(1.1)
 }
 
@@ -978,16 +1059,16 @@ color: #fff;
 }
 
 .headLines .rollNews {
-    background: #920000;
     position: relative;
     height: 50px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.17);
+    background: linear-gradient(to bottom, #e41700 0%,#860000 100%);
 }
 
 .headLines .rollNews:after {
     content: '';
     height: 100%;
-    width: 30%;
+    width: 20%;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #b30909 99%, #920000 100%);
     position: absolute;
     top: 0;
@@ -1060,7 +1141,7 @@ color: #fff;
         height: 200px;
     }
 
-    .galleryArea .gaBox {
+     .gaBox {
         margin-bottom: 1.5em;
     }
 

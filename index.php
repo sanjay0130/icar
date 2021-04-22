@@ -15,13 +15,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Custom Css -->
 <link rel="stylesheet" type="text/css" href="css/custom.css">
+<style>
+  body{
+    background: whitesmoke;
+  }
+</style>
 </head>
 <!--Doctype Ends Here-->
 <body>
  <?php include("header.php"); ?>
 <main class="mainBody">
   <?php include('red_marque.php') ?>
-  <br>
+ 
   <section class="sliderArea">
     <div class="container-fluid">
       <div class="row">
@@ -92,8 +97,9 @@
               $fetch_res = $con_obj->select('achievements', '*', NULL, NULL, NULL);
               $res       = $con_obj->numRows();
               if ($res > 0) {
-                  echo '<div class="nbBody" id="vertical-ticker3"><ul>';
-
+                  
+                  echo '<div class="nbBody" id="vertical-ticker332"><marquee behaviour="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();"><ul>';
+                  
                   foreach ($con_obj->getResult() as $key => $value) {
 
                     $label = $value['label1'];
@@ -104,7 +110,7 @@
                     echo "<li>".$label."</li>";
                   }
 
-                  echo '</ul></div>';
+                  echo '</ul></marquee></div>';
 
               } else {
 
@@ -204,6 +210,37 @@
           </div>
         </div>
         <div class="col-sm-3">
+          <div class="gaBox">
+            <div class="gaHeader">
+              <h4>Video Gallery</h4>
+            </div>
+            <div class="gaBody"> <a href="video_gallery.php"><img src="img/vdGallery.png" alt=""></a> </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="gaBox">
+            <div class="gaHeader">
+              <h4>Photo Gallery</h4>
+            </div>
+            <div class="gaBody"><a href="photo_gallery.php"><img src="img/phGallery.png" alt=""></a></div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="gaBox">
+            <div class="gaHeader">
+              <h4>Team</h4>
+            </div>
+            <div class="gaBody"><a href="our_team.php"><img src="img/team.png" alt=""></a></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="galleryArea">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
           <div class="miniBox">
             <div class="mbHeader">
               <h4>Quick Suggestion</h4>
@@ -253,43 +290,29 @@
             </div>
             <div class="mbBody"  id="vertical-ticker2">
               <ul class="impLinks">
-                <li><a href="#">...............</a></li>
-                <li><a href="#">...............</a></li>
-                <li><a href="#">...............</a></li>
-                <li><a href="#">...............</a></li>
-                <li><a href="#">...............</a></li>
+                <li><a href="#">Well organized and easy to understand Web building tutorials</a></li>
+                <li><a href="#">Well organized and easy to understand Web building tutorials</a></li>
+                <li><a href="#">Well organized and easy to understand Web building tutorials</a></li>
+                <li><a href="#">Well organized and easy to understand Web building tutorials</a></li>
+                <li><a href="#">Well organized and easy to understand Web building tutorials</a></li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="galleryArea">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="gaBox">
-            <div class="gaHeader">
-              <h4>Video Gallery</h4>
+        <div class="col-sm-3">
+          <div class="miniBox">
+            <div class="mbHeader">
+              <h4>Other Links</h4>
             </div>
-            <div class="gaBody"> <a href="video_gallery.php"><img src="img/vdGallery.png" alt=""></a> </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="gaBox">
-            <div class="gaHeader">
-              <h4>Photo Gallery</h4>
+            <div class="mbBody"  id="vertical-ticker5">
+              <ul class="ttrLinks">
+                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
+                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
+                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
+                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
+                <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
+              </ul>
             </div>
-            <div class="gaBody"><a href="photo_gallery.php"><img src="img/phGallery.png" alt=""></a></div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="gaBox">
-            <div class="gaHeader">
-              <h4>Team</h4>
-            </div>
-            <div class="gaBody"><a href="our_team.php"><img src="img/team.png" alt=""></a></div>
           </div>
         </div>
       </div>
@@ -324,7 +347,7 @@
             $('#vertical-ticker').vTicker({
                 speed: 700,
                 pause: 4000,
-                showItems: 5,
+                showItems:3,
                 mousePause: true,
                 animate: true,
                 startPaused: false
@@ -345,16 +368,14 @@
             animate: true,
             startPaused: false
         });
-        $('#vertical-ticker3').vTicker({
-            speed: 700,
+        
+        $('#vertical-ticker5').vTicker({
+          speed: 700,
             pause: 4000,
-            showItems: 10,
+            showItems: 5,
             mousePause: true,
-            animate: false,
-            startPaused: false,
-            padding:4,
-            margin:10,
-            height: 0,
+            animate: true,
+            startPaused: false
         });
         });
     </script>
