@@ -269,8 +269,8 @@
             <div class="mbHeader">
               <h4>Quick Links</h4>
             </div>
-            <div class="mbBody"  id="vertical-ticker1">
-              
+            <div class="mbBody">
+              <div id="vertical-ticker1"> 
             
               <ul class="qLinks">
                 <li><a href="#">Rice Pest Lab</a></li>
@@ -279,7 +279,7 @@
                 <li><a href="#">ICAR Department</a></li>
               </ul>
 
-
+            </div>
             </div>
           </div>
         </div>
@@ -288,7 +288,8 @@
             <div class="mbHeader">
               <h4>Important Links</h4>
             </div>
-            <div class="mbBody"  id="vertical-ticker2">
+            <div class="mbBody">
+            <div id="vertical-ticker2">
               <ul class="impLinks">
                 <li><a href="#">Well organized and easy to understand Web building tutorials</a></li>
                 <li><a href="#">Well organized and easy to understand Web building tutorials</a></li>
@@ -297,6 +298,7 @@
                 <li><a href="#">Well organized and easy to understand Web building tutorials</a></li>
               </ul>
             </div>
+            </div>
           </div>
         </div>
         <div class="col-sm-3">
@@ -304,7 +306,8 @@
             <div class="mbHeader">
               <h4>Other Links</h4>
             </div>
-            <div class="mbBody"  id="vertical-ticker5">
+            <div class="mbBody">
+            <div id="vertical-ticker5">
               <ul class="ttrLinks">
                 <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
                 <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
@@ -312,6 +315,7 @@
                 <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
                 <li><a href="#">Indian Council of Agricultural Research (ICAR)</a></li>
               </ul>
+            </div>
             </div>
           </div>
         </div>
@@ -345,8 +349,8 @@
 <script>
         $(document).ready(function(){
             $('#vertical-ticker').vTicker({
-                speed: 700,
-                pause: 4000,
+                speed: 400,
+                pause: 3000,
                 showItems:3,
                 mousePause: true,
                 animate: true,
@@ -372,7 +376,7 @@
         $('#vertical-ticker5').vTicker({
           speed: 700,
             pause: 4000,
-            showItems: 5,
+            showItems: 3,
             mousePause: true,
             animate: true,
             startPaused: false

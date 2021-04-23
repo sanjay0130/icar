@@ -63,7 +63,7 @@
                           </h5>
                         </div>
 
-                        <div id="collapse<?php echo $rand; ?>" class="collapse show" aria-labelledby="heading<?php echo $rand; ?>" data-parent="#accordion">
+                        <div id="collapse<?php echo $rand; ?>" class="collapse" aria-labelledby="heading<?php echo $rand; ?>" data-parent="#accordion">
                           <div class="card-body">
                             <?php echo $value['description']; ?>
                           </div>
@@ -128,11 +128,9 @@
         });
     </script>
 <script>
-        $(document).ready(function(){
-            
-           
-          
-        });
-    </script>
+  $(document).ready(function(){
+    $("#accordion .card:first-child .collapse").addClass("show");
+  });
+</script>
 </body>
 </html>
