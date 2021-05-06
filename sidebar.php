@@ -1,8 +1,7 @@
 <div class="col-sm-2 px-sm-0">
   <div class="siteLeftNav">
     <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown"
-                         aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
+      
       <div class="collapse navbar-collapse" id="navbarNavDropdown1">
         <ul class="navbar-nav">
           <li class="nav-item active"> <a class="nav-link" href="#">Rice Insect Pests <span class="sr-only">(current)</span></a> </li>

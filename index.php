@@ -47,7 +47,7 @@
           ?>
 
         <div class="col-sm-8">
-          <div id="siteSlider" class="carousel slide carousel-fade" data-ride="carousel">
+          <div id="siteSlider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <?php 
 

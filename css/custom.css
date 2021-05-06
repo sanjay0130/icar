@@ -39,16 +39,19 @@ figure {
 .mainBody .sliderArea {
     margin-top: 0.5em;
 }
-
-.mainBody .sliderArea .carousel-item {
-    height: 450px;
-    
-}
 .mainBody .sliderArea #siteSlider{
+    height: 450px;
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 10%);
 }
+.mainBody .sliderArea .carousel-inner {
+    height: 100%;
+}
+.mainBody .sliderArea .carousel-item {
+    height: 100%;
+}
+
 .mainBody .sliderArea .carousel-caption {
     position:absolute;
     background:rgba(0,0,0,0.4);
@@ -56,11 +59,13 @@ figure {
     right:0;
     bottom:0;
     padding-bottom: 2em;
+    z-index: 2;
 }
 .mainBody .sliderArea .carousel-control-prev,
 .mainBody .sliderArea .carousel-control-next {
     width: auto;
     opacity: 1;
+    z-index: 3;
 }
 .mainBody .sliderArea .carousel-indicators{margin-bottom: 0;}
 .mainBody .sliderArea .carousel-control-prev {}
@@ -1164,12 +1169,12 @@ color: #fff;
     .topBar .adminArea {
         margin-bottom: .5em;
     }
-
-    .mainBody .sliderArea .carousel-item {
-        height: 250px;
+    
+    .mainBody .sliderArea #siteSlider{
+        height: 300px;
         margin: 1em 0;
-        margin-top: 0;
     }
+    
 
     .nyBox {
         height: 200px;
@@ -1203,22 +1208,26 @@ color: #fff;
     .siteLeftNav {
         position: absolute;
         z-index: 99;
-        top: -3.5em;
+        top: -7.5em;
         right: 0;
         text-align: right;
         left: 1em;
-        width: 91%
+        width: 94%
     }
 
     .siteLeftNav .navbar-nav li {
         background: #333;
         z-index: 9999;
     }
-
+    .siteTopNav .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    }
     .siteTopNav .navbar-nav {
-        display: block;
         position: absolute;
         z-index: 99;
+        
     }
 
     .innerBody .innerBanner {
