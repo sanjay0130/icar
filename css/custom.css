@@ -1157,8 +1157,12 @@ color: #fff;
 }
 
 @media(max-width:576px) {
+    .topBar .adminArea ul{
+        justify-content: flex-end;
+    }
     .topBar #datetime {
-        margin-bottom: .5em
+        margin-bottom: .5em;
+        padding:0;
     }
 
     .topBar .fontSize {

@@ -2,7 +2,7 @@
   <section class="topBar">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 px-sm-0 my-auto text-center text-sm-left">
+        <div class="col-sm-3 col-6 px-sm-0 my-auto text-sm-left">
           <h5 id="datetime"></h5>
           <script>
 	        var dt = new Date();
@@ -11,7 +11,7 @@
 	            .getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
 	    </script>
         </div>
-        <div class="col-sm-3 my-auto text-center text-sm-left">
+        <div class="col-sm-3 my-auto text-center text-sm-left d-none d-sm-block">
           <div class="fontSize"> <a href="#">Skip to main content</a>
             <ul>
               <li><a href="#">A-</a></li>
@@ -20,12 +20,12 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-4 my-auto text-center text-sm-left">
+        <div class="col-sm-4 col-6  my-auto text-right text-sm-left">
           <div class="adminArea">
             <ul>
               <li><a href="admin/" target="_blank">Admin Login</a></li>
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Translator</a></li>
+              <li class="d-none d-sm-block"><a href="#">Sitemap</a></li>
+              <li class="d-none d-sm-block"><a href="#">Translator</a></li>
             </ul>
           </div>
         </div>
