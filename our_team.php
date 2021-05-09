@@ -34,6 +34,14 @@
         <?php include('red_marque.php') ?>
         <section class="teamAll">
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="headingText">
+                        <h2>Scientific Team</h2>
+                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row" id="team_member_id">
                     
 
