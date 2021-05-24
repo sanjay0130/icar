@@ -7,7 +7,7 @@ class common extends encrypt_class
 	private $db_host = "localhost";
 	private $db_user = "root";
 	private $db_pass = "";
-	private $db_name = "rpid_123";
+	private $db_name = "icar";
 
 	private $con = false;
 	private $result = array();
